@@ -179,6 +179,14 @@ if (!$ok) {
   by the GNU social platform.
 </p>
 
+<h4>Fm</h4>
+
+<p>
+  I added a small curl snippet to <code>/nixtape/1.x/submissions/1.2/index.php</code>
+  and <code>/gnukebox/submissions/1.2/index.php</code> to ping the hub anytime I scrobble
+  anything.
+</p>
+
 <h3>The Hubs</h3>
 
 <p>
@@ -220,7 +228,6 @@ if (!$ok) {
 <h2>Conclusion</h2>
 
 <p>
-  I'm planning on adding more sources to the stream (my gnu-fm instance and
-  possibly my Kodi media player to name a couple). Polishing how everything
-  works is also an ongoing activity.
+  I'm planning on adding more sources to the stream as time goes by. Polishing how
+  everything works is also an ongoing activity.
 </p>
