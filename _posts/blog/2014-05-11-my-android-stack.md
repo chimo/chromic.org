@@ -83,7 +83,7 @@ image:
     I run Kodi on my <a href="https://www.raspberrypi.org">Raspberry Pi</a>.
   </dd>
 
-  <dt><a href="https://mozilla.org/">Firefox</a></dt>
+  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=lightning&fdid=acr.browser.lightning">Lightning</a></dt>
   <dd>Web browser</dd>
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=openkeychain&fdid=org.sufficientlysecure.keychain">OpenKeychain</a></dt>
@@ -118,7 +118,7 @@ image:
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=scrobbler&fdid=com.adam.aslfms">Simple Last.fm Scrobbler</a></dt>
   <dd>A music scrobbler. Modified to submit to my <a href="https://gnu.io/fm/">GNU FM</a> instance.</dd>
-  
+
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=tasks&fdid=org.tasks">Tasks</a></dt>
   <dd>TODO list</dd>
 
