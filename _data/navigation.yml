@@ -3,17 +3,18 @@
 - title: About
   url: /about/
 
-- title: Articles
-  url: /articles/
-
 - title: Blog
   url: /blog/
 
-- title: Theme Setup
-  url: /theme-setup/
+- title: Micro-Blog
+  url: http://sn.chromic.org
 
-- title: Made Mistakes
-  url: http://mademistakes.com
+- title: Media
+  url: http://media.chromic.org
 
-- title: Search
-  url: /search/
+- title: Code
+  url: http://code.chromic.org
+
+- title: fm
+  url: http://fm.chromic.org
+

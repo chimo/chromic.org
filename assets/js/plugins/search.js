@@ -12,7 +12,7 @@
     ========================================================================== */
 
 var q, jsonFeedUrl = "/search.json",
-    $searchForm = $(".simple-search"),
+    $searchForm = $("[data-search-form]"),
     $searchInput = $("[data-search-input]"),
     $resultTemplate = $("#search-result"),
     $resultsPlaceholder = $("[data-search-results]"),
@@ -56,11 +56,11 @@ function initSearch() {
     }
 
     // Get search results on submission of form
-    $(document).on("submit", $searchForm, function(e) {
+/*    $(document).on("submit", $searchForm, function(e) {
         e.preventDefault();
         q = $searchInput.val();
         execSearch(q);
-    });
+    });*/
 }
 
 

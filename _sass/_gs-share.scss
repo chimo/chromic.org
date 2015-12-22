@@ -1,0 +1,42 @@
+.js-gs-share,
+.gs-share [aria-hidden="true"],
+.gs-share-form[aria-hidden="true"] {
+    display: none;
+}
+
+.js-gs-share-enabled .js-gs-share {
+    display: inline;
+}
+
+.gs-share {
+    position: relative;
+
+    .js-gs-share[href] {
+        display: inline;
+    }
+
+    [type="submit"] {
+        display: block;
+        margin-top: 8px;
+    }
+}
+
+.gs-share [aria-hidden="false"],
+.gs-share-form[aria-hidden="false"] {
+    display: block;
+}
+
+.gs-share-form {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.gs-share [for="gs-account"],
+.gs-share [type="text"] {
+    display: block;
+    margin-bottom: 8px;
+}

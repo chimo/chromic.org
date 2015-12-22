@@ -1,10 +1,19 @@
 ---
 layout: {{ layout }}
 title: {{ title }}
+description:
 modified:
 categories: {{ dir }}
-excerpt:
-tags: []
+tags:
 image:
   feature:
+  credit:
+  creditlink:
+comments: true
+excerpt:
 ---
+
+<div class="p-summary">
+
+</div>
+<!-- more -->

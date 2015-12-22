@@ -1,0 +1,59 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+
+<link rel="openid.server" href="http://id.chromic.org" />
+<link rel="openid2.provider" href="http://id.chromic.org" />
+
+</head>
+
+<body id="homepage">
+
+{% include navigation.html %}
+
+<div id="main" role="main">
+  <article>
+    <div class="entry-wrapper">
+      <footer class="entry-meta">
+        <h2>Blog<br>Posts&nbsp;<a href="/feed.xml"><span class="fa fa-rss"></span></a></h2>
+        <ul class="post-list">
+        {% for post in site.categories.blog limit:10 %}
+          <li>
+            <article class="h-entry">
+              <a class="u-url" href="{{ site.url }}{{ post.url }}">
+                <span class="p-name" style="margin-top: 0;">{{ post.title }}</span>
+                <span class="entry-date">
+                  <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                </span>
+              </a>
+            </article>
+          </li>
+        {% endfor %}
+        </ul>
+      </footer>
+      <div class="entry-content">
+        <div class="ls-wrap">
+            <h2>Realtime<br>Updates&nbsp;<a href="/updates.atom"><span class="fa fa-rss"></span></a></h2>
+          {{ content }}
+        </div>
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+  </article>
+
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+{% include scripts.html %}
+
+</body>
+</html>
+
