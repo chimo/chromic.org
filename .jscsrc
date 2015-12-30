@@ -1,0 +1,11 @@
+{
+	"preset": "jquery",
+	"validateLineBreaks": null,
+	"requireCamelCaseOrUpperCaseIdentifiers": null,
+	"maximumLineLength": 500,
+	"requireBlocksOnNewline": true,
+	"requireSpaceBeforeBlockStatements": true,
+	"disallowMixedSpacesAndTabs": true,
+    "requireCapitalizedComments": false,
+    "validateIndentation": 4
+}
