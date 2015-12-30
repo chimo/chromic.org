@@ -14,6 +14,9 @@ module.exports = function( grunt ) {
             ]
         },
         uglify: {
+            options: {
+                sourceMap: true
+            },
             dist: {
                 files: {
                     "assets/js/scripts.min.js": [
