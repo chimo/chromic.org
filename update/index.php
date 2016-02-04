@@ -8,7 +8,7 @@ excerpt:
 
 // TODO: De-dupe this file and ../index.php
 
-require_once('../../_config.php');
+require_once('../../private/_config.php');
 
 $dsn = 'mysql:dbname=' . $config['db']['name'] . ';host=' . $config['db']['host'] . ';charset=' . $config['db']['charset'];
 $user = $config['db']['user'];

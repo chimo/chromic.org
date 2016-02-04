@@ -6,7 +6,7 @@ require 'vendor/autoload.php';
 use \FeedWriter\ATOM;
 
 // FIXME: De-dupe (/index.php, /updates/index.php)
-require_once('../_config.php');
+require_once('../private/_config.php');
 
 $dsn = 'mysql:dbname=' . $config['db']['name'] . ';host=' . $config['db']['host'] . ';charset=' . $config['db']['charset'];
 $user = $config['db']['user'];
