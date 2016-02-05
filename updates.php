@@ -27,13 +27,13 @@ $res = $dbh->query($sql);
 $feed = new ATOM;
 
 $feed->setTitle('chimo\'s updates');
-$feed->setLink('http://chromic.org');
+$feed->setLink('https://chromic.org');
 $feed->setDate(new DateTime());
 
 $feed->setChannelElement('author', array('name' => 'chimo'));
 
-$feed->setSelfLink('http://chromic.org/updates.xml');
-$feed->setAtomLink('http://push.chromic.org', 'hub');
+$feed->setSelfLink('https://chromic.org/updates.xml');
+$feed->setAtomLink('https://push.chromic.org', 'hub');
 
 while ($row = $res->fetch(PDO::FETCH_ASSOC)) {
     $newItem = $feed->createNewItem();
