@@ -8,3 +8,5 @@ node_modules
 .sass-cache
 .jekyll-metadata
 /composer
+/xrd/*.xml
+
