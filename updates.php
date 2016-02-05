@@ -1,7 +1,7 @@
 <?php
 
 // composer
-require 'vendor/autoload.php';
+require 'composer/autoload.php';
 
 use \FeedWriter\ATOM;
 
