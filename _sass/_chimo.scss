@@ -257,6 +257,16 @@ summary {
 /** TMP **/
 .interactions-section {display: none;}
 
+.isso {
+    label {
+        margin-top: 10px;
+    }
+
+    [type="submit"] {
+        margin-top: 10px;
+    }
+}
+
 #fragmentioner-ui  {
     padding-left: 5px;
     padding-right: 5px;
