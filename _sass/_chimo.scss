@@ -1,3 +1,11 @@
+.js-display-block {
+    display: none;
+}
+
+.js .js-display-block {
+    display: block;
+}
+
 #ls .e-content canvas {
     max-width: 655px;
 }
