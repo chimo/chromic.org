@@ -254,8 +254,10 @@ summary {
     }
 }
 
-/** TMP **/
-.interactions-section {display: none;}
+/* Make sure empty lifestream item template is hidden */
+#tpl {
+    display: none;
+}
 
 .isso {
     label {
