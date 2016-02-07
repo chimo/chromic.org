@@ -61,18 +61,9 @@
       <div class="entry-content e-content">
         {{ content }}
 
-        <div class="interactions-section">
-          {% include interactions.html %}
+        <hr>
 
-          <label>Webmention/pingback URL:
-            <input readonly value="https:{{ site.url }}{{ page.url }}" style="cursor: text;">
-          </label>
-
-          <h4>Comment form:</h4>
-          <div id="isso-thread" class="isso-thread"></div>
-          <!-- Get the form, but no comments -->
-          <script data-isso-max-comments-top="0" data-isso="//comments.chromic.org/chromic/" src="//comments.chromic.org/chromic/js/embed.min.js"></script>
-        </div>
+        {% include interactions.html %}
       </div>
     </div>
   </article>
