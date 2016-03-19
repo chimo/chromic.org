@@ -11,7 +11,7 @@ image:
 ---
 
 <div class="p-summary">
-<p>I have a Samsung Galaxy S5 currently running <a href="http://www.cyanogenmod.org/">Cyanogenmod 12.1</a> (without Google Apps).</p>
+<p>I have a Samsung Galaxy S5 currently running <a href="http://www.cyanogenmod.org/">Cyanogenmod 13</a> (without Google Apps).</p>
 </div>
 <!-- more -->
 
