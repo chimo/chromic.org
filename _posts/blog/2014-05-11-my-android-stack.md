@@ -121,6 +121,11 @@ image:
     Syncs with my owncloud instance through the <a href="http://cweiske.de/grauphel.htm">grauphel plugin</a>.
   </dd>
 
+  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=transportr&fdid=de.grobox.liberario">Tomdroid</a></dt>
+  <dd>
+    Public Transport Companion.
+  </dd>
+
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=wallabag&fdid=fr.gaulupeau.apps.InThePoche">wallabag</a></dt>
   <dd>
     <a href="https://wallabag.org/">Wallabag</a> client.<br />
