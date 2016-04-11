@@ -23,8 +23,7 @@ image:
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=antennapod&fdid=de.danoeh.antennapod">AntennaPod</a></dt>
   <dd>
-    Podcast Player<br />
-    Supports variable playback speed via <a href="https://f-droid.org/repository/browse/?fdfilter=Prestissimo&fdid=com.falconware.prestissimo">Prestissimo</a>
+    Podcast Player
   </dd>
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=barcode&fdid=com.google.zxing.client.android">Barcode Scanner</a></dt>
@@ -102,12 +101,6 @@ image:
   <dd>
     Tools for musicians, including a chromoatic tuner, a metronome, and a pitch drone.<br />
     I mostly use it to help me tune my guitar.
-  </dd>
-
-  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=Prestissimo&fdid=com.falconware.prestissimo">Prestissimo</a></dt>
-  <dd>
-    Brings variable playback speed feature to supported media players<br />
-    I use it with <a href="https://f-droid.org/repository/browse/?fdfilter=antennapod&fdid=de.danoeh.antennapod">AntennaPod</a>
   </dd>
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=redreader&fdid=org.quantumbadger.redreader">RedReader</a></dt>
