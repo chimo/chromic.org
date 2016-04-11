@@ -99,7 +99,7 @@ image:
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=practice%20hub&fdid=com.proch.practicehub">Practice Hub</a></dt>
   <dd>
-    Tools for musicians, including a chromoatic tuner, a metronome, and a pitch drone.<br />
+    Tools for musicians, including a chromatic tuner, a metronome, and a pitch drone.<br />
     I mostly use it to help me tune my guitar.
   </dd>
 
