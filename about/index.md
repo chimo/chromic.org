@@ -17,8 +17,6 @@ It supports [webmentions](http://indiewebcamp.com/webmention) and [fragmentions]
 
 The [source code](https://github.com/chimo/chromic.org) can be found on github.
 
-You can find more technical information about the site on [BuiltWith.com](http://builtwith.com/chromic.org).
-
 ## Chimo
 
 My full-time job involves HTML, CSS/SASS, JS/jQuery.
