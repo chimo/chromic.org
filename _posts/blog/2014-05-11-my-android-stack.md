@@ -1,7 +1,7 @@
 ---
 title: My Android Stack
 description: "The free, open source (FOSS) Android apps I use"
-modified: 2015-09-25
+modified: 2016-04-20
 categories: blog
 tags: [foss, floss, android]
 image:
@@ -130,6 +130,11 @@ image:
   <dd>
     <a href="https://wallabag.org/">Wallabag</a> client.<br />
     Syncs with <a href="https://later.chromic.org">my wallabag instance</a>.
+  </dd>
+
+  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=wi-fi+privacy&fdid=be.uhasselt.privacypolice">Wi-Fi Privacy Police</a></dt>
+  <dd>
+    Prevents your smartphone or tablet from leaking privacy sensitive information via Wi-Fi networks.
   </dd>
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=yaaic&fdid=org.yaaic">Yaaic</a></dt>
