@@ -98,7 +98,7 @@
             $time = $newItem
                 .find( ".dt-published" )
                 .first()
-                .attr( "datetime", data.published )
+                .attr( "datetime", data.published + "Z" )
                 .html( utils.formatDate( data.published ) );
 
             // Insert new content at the top of the stream
