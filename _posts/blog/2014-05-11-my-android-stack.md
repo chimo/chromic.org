@@ -1,7 +1,7 @@
 ---
 title: My Android Stack
 description: "The free, open source (FOSS) Android apps I use"
-modified: 2016-04-20
+modified: 2016-05-17
 categories: blog
 tags: [foss, floss, android]
 image:
@@ -19,7 +19,7 @@ image:
 
 <dl>
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=andstatus&fdid=org.andstatus.app">AndStatus</a></dt>
-  <dd>GNU social client. It does Twitter too, but I have TwitterBridge enabled on my GS instance so I don't need that.</dd>
+  <dd>Social networking client. I use it with my <a href="https://gnu.io/social">GNU social</a> instance.</dd>
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=antennapod&fdid=de.danoeh.antennapod">AntennaPod</a></dt>
   <dd>
@@ -53,12 +53,6 @@ image:
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=freeotp&fdid=org.fedorahosted.freeotp">FreeOTP</a></dt>
   <dd>Two-factor authenticator</dd>
 
-  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=github&fdid=com.github.mobile">GitHub</a></dt>
-  <dd>
-    Official GitHub client.<br />
-    I mostly use GitHub as a mirror for my <a href="http://gogs.io/">Gogs</a> instance these days.
-  </dd>
-
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=hn&fdid=com.manuelmaly.hn">HN</a></dt>
   <dd>Hacker News client</dd>
 
@@ -84,6 +78,12 @@ image:
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=lightning&fdid=acr.browser.lightning">Lightning</a></dt>
   <dd>Web browser</dd>
+
+  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=newpipe&fdid=org.schabi.newpipe">NewPipe</a></dt>
+  <dd>
+    Lightweight YouTube frontend. I like the fact that you can send videos to
+    <a href="https://kodi.tv/">Kodi</a> through <a href="https://f-droid.org/repository/browse/?fdfilter=kore&fdid=org.xbmc.kore">Kore</a>
+  </dd>
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=openkeychain&fdid=org.sufficientlysecure.keychain">OpenKeychain</a></dt>
   <dd>
