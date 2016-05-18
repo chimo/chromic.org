@@ -1,0 +1,49 @@
+/**
+ * Interactions (comments, etc)
+ */
+
+.comment-form {
+    label {
+        margin-top: 10px;
+    }
+
+    [type="submit"] {
+        margin-top: 10px;
+    }
+}
+
+.comment-thread {
+    list-style-type: none;
+    padding: 0;
+
+    .comment-thread {
+        border-left: 1px solid #ddd;
+        margin-left: 50px;
+        padding-left: 10px;
+    }
+}
+
+.comment {
+    position: relative;
+
+    .p-content ol {
+        list-style-type: decimal; // IE: http://caniuse.com/#feat=css-initial-value
+        list-style-type: initial;
+    }
+}
+
+.comment__content ul {
+    list-style-type: disc;
+}
+
+.comment__meta {
+    display: block;
+    text-align: right;
+}
+
+.comment__avatar {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 48px;
+}

@@ -27,6 +27,9 @@ sitemap: false
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
 
-@import "chimo";
-@import "gs-share";
-@import "lifestream";
+@import "chimo/fragmention";
+@import "chimo/gs-share";
+@import "chimo/interactions";
+@import "chimo/lifestream";
+@import "chimo/stream";
+@import "chimo/util";

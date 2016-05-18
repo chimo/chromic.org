@@ -1,0 +1,49 @@
+/* Make sure empty lifestream item template is hidden */
+#tpl {
+    display: none;
+}
+
+.interaction-icons {
+    float: left;
+    font-size: 0.9rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    .interaction-icon {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+}
+
+#likes,
+#mentions,
+#replies,
+#reposts,
+#rsvps {
+    display: none;
+    margin: 0 auto;
+    max-width: 900px;
+
+    a {
+        color: #0097bb;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+figure a img {
+    opacity: 1;
+
+    &:hover {
+        transform: none;
+    }
+}
+
+#ls .e-content canvas {
+    max-width: 655px;
+}

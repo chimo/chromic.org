@@ -1,0 +1,18 @@
+#fragmentioner-ui  {
+    padding-left: 5px;
+    padding-right: 5px;
+
+    a {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            padding-right: 5px;
+        }
+    }
+}
