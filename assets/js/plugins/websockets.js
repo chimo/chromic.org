@@ -3,7 +3,7 @@
     "use strict";
 
     var $htmlTemplate = $( "#tpl" ),
-        $stream = $( "#ls" );
+        $stream = $( ".stream__activities" );
 
     if ( $htmlTemplate.length === 0 ) {
         return;
