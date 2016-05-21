@@ -310,7 +310,8 @@ span + .entry-title {
 }
 // Page layout
 #home,
-#page {
+.update,
+.page {
 	.entry-wrapper {
 		max-width: em(760);
 	}
