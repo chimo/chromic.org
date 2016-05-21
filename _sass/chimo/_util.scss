@@ -165,13 +165,13 @@ summary {
         display: none;
     }
 
-    > summary:before {
+    > summary::before {
         content: "► ";
         float: left;
         width: 20px;
     }
 
-    &.open > summary:before {
+    &.open > summary::before {
         content: "▼ ";
     }
 
