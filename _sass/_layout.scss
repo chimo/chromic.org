@@ -245,6 +245,7 @@ span + .entry-title {
 	padding-right: $gutter;
 	padding-left: $gutter;
 }
+.sidebar,
 .entry-meta {
 	@include span-columns(12);
 	text-transform: uppercase;
@@ -277,7 +278,7 @@ span + .entry-title {
 		@include clearfix;
 	}
 }
-.entry-content {
+.content {
 	@include span-columns(12);
 	p:first-child {
 		margin-top: 0;
@@ -317,7 +318,7 @@ span + .entry-title {
 		text-align: center;
 		max-width: 100%;
 	}
-	.entry-content {
+	.content {
 		@include span-columns(12);
 	}
 }

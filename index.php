@@ -16,8 +16,8 @@ $password = $config['db']['password'];
 $html_template = <<<EOT
 <li class="%s">
     <figure class="h-entry chr-card">
-        <figcaption class="p-name">%s</figcaption>
-        <blockquote class="e-content" cite="%s">
+        <figcaption class="p-name chr-card__title">%s</figcaption>
+        <blockquote class="e-content chr-card__content" cite="%s">
             %s
         </blockquote>
         <footer>
@@ -75,7 +75,7 @@ $sql = 'SELECT event.id, title, content, published, foreign_url, object_type, ob
         'ORDER BY published DESC LIMIT ' . $limit;
 
 $res = $dbh->query($sql);
-$html = '<ol id="ls">';
+$html = '<ol class="stream__activities">';
 $nbRows = 0;
 
 $datePublished = new DateTime();

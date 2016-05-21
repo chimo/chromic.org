@@ -5,30 +5,5 @@
 
     <!--# include virtual="/php/listcomments.php?target={{ page.url }}" -->
   </div>
-
-  <h3>Participate</h3>
-
-  <h4><label for="webmention-url">Webmention/pingback URL:</label></h4>
-  <input id="webmention-url" readonly value="https:{{ site.url }}{{ page.url }}" style="cursor: text;">
-
-  <div class="isso">
-    <h4>Comment form:</h4>
-
-    <form class="isso-form" action="/php/isso.php" method="post">
-        <textarea id="isso-text" name="text" required></textarea>
-
-        <label for="isso-author">Name (optional):</label>
-        <input id="isso-author" name="author">
-
-        <label for="isso-email">Email (optional, not published)</label>
-        <input id="isso-email" name="email" type="email">
-
-        <label for="isso-website">Website (optional)</label>
-        <input id="isso-website" name="website" type="url">
-
-        <input type="hidden" name="target" value="{{page.url}}">
-        <input type="submit" value="Submit Comment">
-    </form>
-  </div>
 </div>
 

@@ -49,17 +49,25 @@ if ($row) {
     $datePublished->modify(str_replace(' ', 'T', $row['published']) . '+00:00');
     $datePublished->setTimeZone($tz);
 
-    // FIXME: Don't triple-wrap the update... don't use ID selectors for styling (CSS)
-    $html = '<div id="homepage"><div id="ls"><div class="' . implode(' ', array($row['type'], $row['object_type'], $row['object_verb'])) . '"><figure class="h-entry chr-card"><figcaption class="p-name">';
+    $html = '<div class="stream">' .
+              '<div class="stream__activities ' . implode(' ', array($row['type'], $row['object_type'], $row['object_verb'])) . '">' .
+                '<figure class="h-entry chr-card">' .
+                  '<figcaption class="p-name chr-card__title">';
+
     $html .= $row['title'];
+
     $html .= '</figcaption>';
-    $html .= '<blockquote class="e-content" cite="' . $row['foreign_url'] . '">' . $row['content'] . '</blockquote>';
+
+    $html .= '<blockquote class="e-content chr-card__content" cite="' . $row['foreign_url'] . '">' . $row['content'] . '</blockquote>';
+
     $html .= '<footer><a class="u-url" href="/update/' . $row['id'] . '">' .
-                '<time class="dt-published timeago" datetime="' . $datePublished->format('c') . '">' . $datePublished->format('Y-m-d H:i:s (T)') . '</time>' .
+               '<time class="dt-published timeago" datetime="' . $datePublished->format('c') . '">' . $datePublished->format('Y-m-d H:i:s (T)') . '</time>' .
              '</a> via <a href="' . $row['foreign_url'] . '"><img src="/images/homepage/' . $row['type'] . '.png" alt="' . $row['type'] . '"></a></footer>';
-    $html .= '</figure></div></div></div>';
+
+    $html .= '</figure></div></div>';
 }
 
 echo $html;
 
 ?>
+

@@ -5,15 +5,12 @@
 
 <div id="main" role="main">
   <article class="hentry h-entry">
-    {% include image-feature.html %}
     <div class="entry-wrapper">
-
       <header class="entry-header">
         {% include tags.html %}
-
         <h1 class="entry-title p-name">
           <a class="u-url" href="{{ page.url }}">
-            {{ page.title }}
+            Chimo liked {{ page.target.type }} by {{ page.target.by }}
             <span class="link-arrow fa fa-link"></span>
           </a>
         </h1>
@@ -23,7 +20,19 @@
 
       <div class="content">
         <div class="entry-content e-content">
-          {{ content }}
+          <figure class="chr-card">
+            <figcaption>
+              Chimo liked {{ page.target.type }} by {{ page.target.by }}
+            </figcaption>
+
+            <blockquote>
+              {{ content }}
+            </blockquote>
+
+            <footer class="chr-card__meta">
+              via <a class="u-like-of" href="{{ page.target.url }}"><img src="{{ page.target.icon }}"></a>
+            </footer>
+          </figure>
 
           <hr>
 

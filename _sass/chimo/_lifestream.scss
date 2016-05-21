@@ -1,14 +1,51 @@
-/**
- * TODO: Remove styles from IDs
- */
+.stream > h2 {
+    text-transform: uppercase;
+}
 
-#homepage {
+.stream__activities {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+        background-position: left 20px;
+        background-repeat: no-repeat;
+        margin-bottom: 12px;
+        padding-left: 0;
+    }
+
+    footer {
+        font-size: 0.875rem;
+        text-align: right;
+
+        img {
+            margin-bottom: 2px;
+        }
+    }
+}
+
+.pagination {
+    a {
+        border: 2px solid #000 !important;
+        color: #fff;
+        transition: all 0.2s ease;
+
+        &:first-child {
+            margin-right: 5px;
+        }
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+.homepage {
     @include media($large) {
-        .ls-wrap {
+        .stream {
             margin-left: 40px;
         }
 
-        #ls {
+        .stream__activities {
             padding-left: 0;
         }
     }
@@ -17,72 +54,43 @@
         font-size: 1.5rem;
     }
 
+    .sidebar a,
     .entry-meta a,
-    .entry-content a time {
+    .stream a {
         color: #0097bb;
     }
 
-    .ls-wrap > h2 {
-        text-transform: uppercase;
-    }
-
-    #ls {
-        list-style-type: none;
-        padding-left: 0;
-
+    .post-list {
         li {
-            background-position: left 20px;
-            background-repeat: no-repeat;
-            margin-bottom: 12px;
+            font-size: 1rem;
             padding-left: 0;
         }
 
-        footer {
-            font-size: 0.875rem;
-            text-align: right;
-
-            img {
-                margin-bottom: 2px;
-            }
+        a > span {
+            display: block;
+            float: none;
+            margin-top: 12px;
         }
     }
 
-    .post-list li {
-        font-size: 1rem;
-        padding-left: 0;
-    }
-
-    .post-list a > span {
-        display: block;
-        float: none;
-        margin-top: 12px;
-    }
-
-    .pagination a {
-        border: 2px solid #000 !important;
-        color: #fff;
-        transition: all 0.2s ease;
-    }
-
-    .pagination a:first-child {
-        margin-right: 5px;
-    }
-
-    .pagination a:hover {
-        color: #000;
-    }
 }
 
 .chr-card {
     box-shadow: -8px 8px 10px 0 rgba(204, 204, 204, 0.47);
     padding: 10px;
-
-    figcaption {
-        font-weight: bold;
-    }
-
-    blockquote {
-        font-style: normal;
-        margin-bottom: 12px;
-    }
 }
+
+.chr-card__title {
+    font-weight: bold;
+}
+
+.chr-card__content {
+    font-style: normal;
+    margin-bottom: 12px;
+}
+
+.chr-card__meta {
+    font-size: 0.875rem;
+    text-align: right;
+}
+

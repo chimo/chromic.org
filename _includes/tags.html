@@ -1,0 +1,9 @@
+<ul class="entry-tags">
+  {% for tag in page.tags %}
+    <li>
+      <a class="p-category" href="{{ site.url }}/tags/#{{ tag }}"
+          title="Pages tagged {{ tag }}">{{ tag }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
