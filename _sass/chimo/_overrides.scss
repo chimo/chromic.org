@@ -1,0 +1,127 @@
+/* Default link color is blue */
+a {
+    &,
+    &:hover,
+    &:focus,
+    &:visited {
+        color: #0097bb;
+    }
+}
+
+/* Top-nav link color is white */
+.navigation-wrapper a {
+    &,
+    &:hover,
+    &:focus,
+    &:visited {
+        color: #fff;
+    }
+}
+
+/* Footer link color is dark gray */
+.footer-wrapper a {
+    &,
+    &:hover,
+    &:focus,
+    &:visited {
+        color: #555;
+    }
+}
+
+/* Sidebar link color is black */
+.entry-meta a,
+.entry-title a,
+.site-title a {
+    &,
+    &:hover,
+    &:focus,
+    &:visited {
+        color: #000;
+    }
+}
+
+/**
+ * Make blog post date dark gray on blog post list pages.
+ * Without this, they're link colored.
+ */
+.post-list a time {
+    color: #222;
+}
+
+
+/**
+ * 1.125rem base font-size for everything, not just <p>s
+ * Don't make <li>s smaller than everything else...
+ */
+body,
+li {
+    font-size: 1.125rem;
+}
+
+/**
+ * Only show lines under links when we hover over them.
+ */
+.entry-content {
+    a {
+        border: 0 !important;
+        color: #0097bb;
+        transition: none;
+
+        &:visited,
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+/**
+ * Flat (horizonal) tags lists
+ */
+.entry-tags {
+    list-style-position: inside;
+    margin: 2rem 0 1.5rem;
+    overflow: hidden;
+    padding: 0;
+
+    li {
+        float: left;
+        margin: 0 10px 0 0;
+
+        &:first-child {
+            list-style-type: none;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 1;
+            }
+        }
+    }
+
+    + .entry-title {
+        margin-top: 0;
+    }
+}
+
+/**
+ * No underline under entry titles
+ */
+.entry-title a {
+    text-decoration: none;
+}
+
+/**
+ * Stop fading in/out and moving on hover
+ */
+figure a img {
+    opacity: 1;
+
+    &:hover {
+        transform: none;
+    }
+}
+

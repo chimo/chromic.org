@@ -1,5 +1,7 @@
-.stream > h2 {
-    text-transform: uppercase;
+.stream {
+    > h2 {
+        text-transform: uppercase;
+    }
 }
 
 .stream__activities {
@@ -23,22 +25,6 @@
     }
 }
 
-.pagination {
-    a {
-        border: 2px solid #000 !important;
-        color: #fff;
-        transition: all 0.2s ease;
-
-        &:first-child {
-            margin-right: 5px;
-        }
-
-        &:hover {
-            color: #000;
-        }
-    }
-}
-
 .homepage {
     @include media($large) {
         .stream {
@@ -55,8 +41,7 @@
     }
 
     .sidebar a,
-    .entry-meta a,
-    .stream a {
+    .entry-meta a {
         color: #0097bb;
     }
 

@@ -1,13 +1,4 @@
 /**
- * 1.125rem base font-size for everything, not just <p>s
- * Don't make <li>s smaller than everything else...
- */
-body,
-li {
-    font-size: 1.125rem;
-}
-
-/**
  * Display as block element only if JS is enabled, otherwise hidden.
  */
 .js-display-block {
@@ -19,89 +10,23 @@ li {
 }
 
 /**
- * Border around images in blog posts
- */
-#article .entry-content img {
-    border: 1px solid #000;
-}
-
-/**
- * Make blog post date dark gray on blog post list pages.
- * Without this, they're link colored.
- */
-.post-list a time {
-    color: #222;
-}
-
-/**
- * Only show lines under links when we hover over them.
- */
-.entry-content {
-    a {
-        border: 0 !important;
-        color: #0097bb;
-        transition: none;
-
-        &:visited,
-        &:hover,
-        &:focus {
-            text-decoration: underline;
-        }
-    }
-}
-
-/**
- * Flat (horizonal) tags lists
- */
-.entry-tags {
-    list-style-position: inside;
-    margin: 2rem 0 1.5rem;
-    overflow: hidden;
-    padding: 0;
-
-    li {
-        float: left;
-        margin: 0 10px 0 0;
-
-        &:first-child {
-            list-style-type: none;
-
-            &::before {
-                content: "";
-                display: inline-block;
-                font-family: FontAwesome;
-                font-style: normal;
-                font-weight: normal;
-                line-height: 1;
-            }
-        }
-    }
-
-    + .entry-title {
-        margin-top: 0;
-    }
-}
-
-/**
- * No underline on titles, show permalink icon on hover
- */
-.entry-title a {
-    text-decoration: none;
-
-    &:focus .link-arrow,
-    &:hover .link-arrow,
-    &:active .link-arrow {
-        visibility: visible;
-    }
-}
-
-/**
  * Hide permalink icon by default
  */
 .link-arrow {
     font-size: 75%;
     text-decoration: none;
     visibility: hidden;
+}
+
+/**
+ * Show permalink icon on hover
+ */
+.entry-title a {
+    &:focus .link-arrow,
+    &:hover .link-arrow,
+    &:active .link-arrow {
+        visibility: visible;
+    }
 }
 
 /**
@@ -180,13 +105,3 @@ summary {
     }
 }
 
-/**
- * Stop fading in/out and moving on hover
- */
-figure a img {
-    opacity: 1;
-
-    &:hover {
-        transform: none;
-    }
-}
