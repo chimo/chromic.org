@@ -126,11 +126,6 @@ if ($nbRows === 10) {
 
 echo $html . '</nav>' . "\n";
 
-// Provide a hidden, empty html template for the websockets to use
-echo '<ul id="tpl" style="display: none;">' . "\n";
-echo sprintf($html_template, "", "", "", "", "", "", "", "", "", "", "", "", "");
-echo "\n" . '</ul>';
-
 ?>
 
 <script>
