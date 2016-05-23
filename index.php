@@ -24,7 +24,7 @@ $html_template = <<<EOT
             <!-- TODO: link to specific types -->
             <!-- TODO: JS progressive enhancement brings data in stream instead of navigating to other page -->
             <a class="interactions-link" href="http://chromic.org/update/%s#interactions">
-            <ul class="interaction-icons" data-webmention-count data-url="http://chromic.org/update/%s">
+            <ul class="interaction-icons" data-webmention-count data-url="https://chromic.org/update/%s">
                 <li class="interaction-icon comments">
                     <span class="num">0</span>
                     <span class="fa fa-comments"></span>
