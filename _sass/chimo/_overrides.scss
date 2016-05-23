@@ -6,6 +6,10 @@ a {
     &:visited {
         color: #0097bb;
     }
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 /* Top-nav link color is white */
@@ -38,6 +42,17 @@ a {
     &:visited {
         color: #000;
     }
+}
+
+.content li > a {
+    &,
+    &:hover {
+        border: none;
+    }
+}
+
+.sidebar a:hover {
+    text-decoration: none;
 }
 
 /**
