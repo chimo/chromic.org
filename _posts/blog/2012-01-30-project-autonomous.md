@@ -48,6 +48,12 @@ Here's a quick list of what's working at the moment:
     I use it on <a href="http://media.chromic.org">media.chromic.org</a> (Mediagoblin) and <a href="http://chromic.org">chromic.org</a> (Jekyll)
   </dd>
 
+  <dt id="feeds"><a href="https://feeds.chromic.org">feeds.chromic.org</a></dt>
+  <dd>
+    A <a href="https://github.com/kylewm/woodwind">woodwind</a> instance.<br />
+    A feed reader that supports mf2 h-feed and xml feeds.
+  </dd>
+
   <dt id="fm"><a href="http://fm.chromic.org">fm.chromic.org</a></dt>
   <dd>
     A <a href="http://foocorp.org/projects/fm/">GNU fm</a> instance.<br />
@@ -91,12 +97,6 @@ Here's a quick list of what's working at the moment:
   <dd>
     A <a href="https://switchboard.p3k.io/">Switchboard</a> instance (a <a href="https://en.wikipedia.org/wiki/PubSubHubbub">PuSH</a> hub)<br />
     I use it to update <a href="http://chromic.org">my homepage</a> in realtime (see the "<a href="http://chromic.org/blog/lifestream-architecture/">Lifestream Architecture</a>" post for more details on how it works).
-  </dd>
-
-  <dt id="rss"><a href="http://rss.chromic.org">rss.chromic.org</a></dt>
-  <dd>
-    A <a href="http://freshrss.org/">FreshRSS</a> instance.<br />
-    RSS Reader similar to Google Reader.
   </dd>
 
   <dt id="search"><a href="http://search.chromic.org">search.chromic.org</a></dt>
