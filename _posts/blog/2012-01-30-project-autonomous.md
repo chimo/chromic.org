@@ -116,5 +116,11 @@ Here's a quick list of what's working at the moment:
     A "<a href="https://webmention.io/">webmention.io</a>" instance.<br />
     I use it to handle <a href="http://indiewebcamp.com/webmention">webmentions</a> on this blog.
   </dd>
+
+  <dt id="xray"><a href="https://xray.chromic.org">xray.chromic.org</a></dt>
+  <dd>
+    A <a href="https://github.com/aaronpk/XRay">XRay</a> instance.<br />
+    Parses and returns structured data from any URL. webmention.io (above) needs this.
+  </dd>
 </dl>
 
