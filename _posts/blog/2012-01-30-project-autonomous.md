@@ -24,6 +24,12 @@ Here's a quick list of what's working at the moment:
     Gravatar replacement
   </dd>
 
+  <dt id="auth"><a href="https://auth.chromic.org">auth.chromic.org</a></dt>
+  <dd>
+    An <a href="http://indiewebcamp.com/indieauth.com">IndieAuth.com</a> instance (an <a href="http://indiewebcamp.com/indieauth">IndieAuth</a> provider).<br />
+    It's also an OpenID delegate.
+  </dd>
+
   <dt id="chromic"><a href="http://chromic.org">chromic.org</a></dt>
   <dd>
     A <a href="http://jekyllrb.com">Jekyll</a>-powered static site/blog<br />
@@ -46,12 +52,6 @@ Here's a quick list of what's working at the moment:
   <dd>
     A <a href="http://foocorp.org/projects/fm/">GNU fm</a> instance.<br />
     <a href="http://last.fm">Last.fm</a> alternative.
-  </dd>
-
-  <dt id="id"><a href="http://id.chromic.org">id.chromic.org</a></dt>
-  <dd>
-    A <a href="http://simpleid.koinic.net/">simpleID</a> instance.<br />
-    An <a href="http://openid.net/">OpenID</a> provider. Supports two-factor authentication via <a href="http://www.dynalogin.org/">dynalogin</a>
   </dd>
 
   <dt id="im"><a href="http://im.chromic.org">im.chromic.org</a></dt>
