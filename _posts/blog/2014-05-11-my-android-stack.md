@@ -1,7 +1,7 @@
 ---
 title: My Android Stack
 description: "The free, open source (FOSS) Android apps I use"
-modified: 2016-05-17
+modified: 2016-06-08
 categories: blog
 tags: [foss, floss, android]
 image:
@@ -113,7 +113,11 @@ image:
   <dd>A music scrobbler. Modified to submit to my <a href="https://gnu.io/fm/">GNU FM</a> instance.</dd>
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=tasks&fdid=org.tasks">Tasks</a></dt>
-  <dd>TODO list</dd>
+  <dd>
+    TODO list.<br>
+    It syncs to the <a href="https://github.com/owncloud/tasks">ownCloud Tasks webapp</a> via
+    <a href="https://f-droid.org/repository/browse/?fdfilter=davdroid&fdid=at.bitfire.davdroid">DAVDroid</a>
+  </dd>
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=tomdroid&fdid=org.tomdroid">Tomdroid</a></dt>
   <dd>
