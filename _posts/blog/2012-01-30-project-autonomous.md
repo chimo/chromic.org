@@ -1,7 +1,7 @@
 ---
 title: Project Autonomous
 description: "List of self-hosted software I'm using"
-modified: 2015-12-12
+modified: 2016-06-20
 categories: blog
 tags: [sysadmin, foss, floss, autonomous]
 image:
@@ -58,12 +58,6 @@ Here's a quick list of what's working at the moment:
   <dd>
     A <a href="http://foocorp.org/projects/fm/">GNU fm</a> instance.<br />
     <a href="http://last.fm">Last.fm</a> alternative.
-  </dd>
-
-  <dt id="im"><a href="https://im.chromic.org">im.chromic.org</a></dt>
-  <dd>
-    A <a href="http://jappix.org">Jappix</a> instance. I use <a href="http://prosody.im/">Prosody</a> as a Jabber server. (I use the <a href="https://f-droid.org/repository/browse/?fdfilter=conversations&fdid=eu.siacs.conversations">Conversations</a> client on Android)<br />
-    Jabber/XMPP client/server chat platform similar to Google Talk.
   </dd>
 
   <dt id="later"><a href="https://later.chromic.org">later.chromic.org</a></dt>
