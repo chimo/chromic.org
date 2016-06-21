@@ -69,8 +69,11 @@ Here's a quick list of what's working at the moment:
 
   <dt id="mail"><a href="https://mail.chromic.org">mail.chromic.org</a></dt>
   <dd>
-    Mail server powered by <a href="http://www.postfix.org/">postfix</a>, <a href="http://www.courier-mta.org/">courier</a>, <a href="http://www.opendkim.org/">OpenDKIM</a> and <a href="http://roundcube.net/">roundcube</a>. I use <a href="https://github.com/k9mail/k-9/">K-9 Mail</a> on Android.<br />
-    Two-factor authentication via the <a href="https://github.com/alexandregz/twofactor_gauthenticator">twofactor roundcube plugin</a> and <a href="https://f-droid.org/repository/browse/?fdfilter=freeotp&fdid=org.fedorahosted.freeotp">FreeOTP</a> (Android)<br />
+    Mail server powered by <a href="http://www.postfix.org/">postfix</a>,
+    <a href="http://www.courier-mta.org/">courier</a>,
+    <a href="http://www.opendkim.org/">OpenDKIM</a>,
+    <a href="http://www.trusteddomain.org/opendmarc/">OpenDMARC</a>,
+    and <a href="http://roundcube.net/">roundcube</a>. I use <a href="https://github.com/k9mail/k-9/">K-9 Mail</a> on Android.<br />
     A <a href="http://gmail.com">Gmail</a> replacement.
   </dd>
 
