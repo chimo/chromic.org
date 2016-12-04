@@ -54,6 +54,16 @@ Here's a quick list of what's working at the moment:
     A feed reader that supports mf2 h-feed and xml feeds.
   </dd>
 
+  <dt id="files"><a href="https://files.chromic.org">files.chromic.org</a></dt>
+  <dd>
+    An <a href="https://nextcloud.com/">Nextcloud</a> instance.<br />
+    I use it as a Dropbox alternative, Google Calendar alternative, Contact
+    Manager and Notes synchronization (via <a href="http://cweiske.de/tagebuch/grauphel.htm">grauphel</a>)
+    for now, but it does more than that.<br />
+    On Android, I use <a href="http://davdroid.bitfire.at/what-is-davdroid">DAVdroid</a>
+    to sync calendar & contacts, and <a href="https://f-droid.org/repository/browse/?fdfilter=tomdroid&fdid=org.tomdroid">Tomdroid</a> to sync notes.
+  </dd>
+
   <dt id="fm"><a href="https://fm.chromic.org">fm.chromic.org</a></dt>
   <dd>
     A <a href="http://foocorp.org/projects/fm/">GNU fm</a> instance.<br />
@@ -81,13 +91,6 @@ Here's a quick list of what's working at the moment:
   <dd>
     A <a href="http://mediagoblin.org">Mediagoblin</a> instance.<br />
     Media sharing platform similar to Flickr, Picasa, etc.
-  </dd>
-
-  <dt id="oc"><a href="https://oc.chromic.org">oc.chromic.org</a></dt>
-  <dd>
-    An <a href="http://owncloud.org/">ownCloud</a> instance.<br />
-    I use it as a Google Calendar alternative, Contact Manager and Notes synchronization (via <a href="http://cweiske.de/tagebuch/grauphel.htm">grauphel</a>) for now, but it does more than that.<br />
-    On Android, I use <a href="http://davdroid.bitfire.at/what-is-davdroid">DAVdroid</a> to sync calendar & contacts, and <a href="https://f-droid.org/repository/browse/?fdfilter=tomdroid&fdid=org.tomdroid">Tomdroid</a> to sync notes.
   </dd>
 
   <dt id="push"><a href="https://push.chromic.org">push.chromic.org</a></dt>
