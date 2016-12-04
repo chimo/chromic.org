@@ -1,7 +1,7 @@
 ---
 title: Project Autonomous
 description: "List of self-hosted software I'm using"
-modified: 2016-06-20
+modified: 2016-12-03
 categories: blog
 tags: [sysadmin, foss, floss, autonomous]
 image:
@@ -81,9 +81,13 @@ Here's a quick list of what's working at the moment:
   <dd>
     Mail server powered by <a href="http://www.postfix.org/">postfix</a>,
     <a href="http://www.courier-mta.org/">courier</a>,
+    <a href="http://www.courier-mta.org/maildrop/">maildrop</a>,
+    <a href="https://spamassassin.apache.org/">SpamAssassin</a>,
     <a href="http://www.opendkim.org/">OpenDKIM</a>,
     <a href="http://www.trusteddomain.org/opendmarc/">OpenDMARC</a>,
-    and <a href="http://roundcube.net/">roundcube</a>. I use <a href="https://github.com/k9mail/k-9/">K-9 Mail</a> on Android.<br />
+    and <a href="http://roundcube.net/">roundcube</a> + its
+    <a href="https://github.com/roundcube/roundcubemail/tree/master/plugins/enigma">enigma plugin</a> for PGP support.
+    I use <a href="https://github.com/k9mail/k-9/">K-9 Mail</a> on Android.<br />
     A <a href="http://gmail.com">Gmail</a> replacement.
   </dd>
 
