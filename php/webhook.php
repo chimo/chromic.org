@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * code.chromic.org webhook
+ */
+
 require_once('../../private/_config.php');
 
 $gogs = $config['gogs'];
@@ -13,8 +17,16 @@ try {
     exit;
 }
 
-// Invalid 'secret'
-if ($gogs['secret'] !== $json->secret) {
+// Missing signature
+if (!isset($_SERVER['HTTP_X_GOGS_SIGNATURE'])) {
+    header($_SERVER['SERVER_PROTOCOL'] . ' 400 Bad Request');
+    exit;
+}
+
+$hmac_signature = $_SERVER['HTTP_X_GOGS_SIGNATURE'];
+
+// Invalid signature
+if (hash_hmac('sha256', $data, $gogs['secret']) !== $hmac_signature) {
     header($_SERVER['SERVER_PROTOCOL'] . ' 400 Bad Request');
     exit;
 }
