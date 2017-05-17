@@ -1,8 +1,9 @@
 ---
 title: My Android Stack
 description: "The free, open source (FOSS) Android apps I use"
-modified: 2016-06-08
+modified: 2017-05-16
 categories: blog
+layout: post
 tags: [foss, floss, android]
 image:
   feature: android.png
@@ -11,7 +12,7 @@ image:
 ---
 
 <div class="p-summary">
-<p>I have a Samsung Galaxy S5 currently running <a href="http://www.cyanogenmod.org/">Cyanogenmod 13</a> (without Google Apps).</p>
+<p>I have a Samsung Galaxy S5 currently running <a href="https://www.lineageos.org/">LineageOS</a> (without Google Apps).</p>
 </div>
 <!-- more -->
 
