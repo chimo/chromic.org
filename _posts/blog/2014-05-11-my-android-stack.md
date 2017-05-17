@@ -41,7 +41,7 @@ image:
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=davdroid&fdid=at.bitfire.davdroid">DAVdroid</a></dt>
   <dd>
     Contacts (CardDAV) and Calendar (CalDAV) sync.<br />
-    I have it sync with my <a href="http://owncloud.org/">ownCloud</a> instance.
+    I have it sync with my <a href="https://nextcloud.com/">Nextcloud</a> instance.
   </dd>
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=document%20viewer&fdid=org.sufficientlysecure.viewer">Document Viewer</a></dt>
@@ -98,11 +98,16 @@ image:
     <a href="https://f-droid.org/repository/browse/?fdfilter=davdroid&fdid=at.bitfire.davdroid">DAVDroid</a>
   </dd>
 
+  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=openvpn&fdid=de.blinkt.openvpn">OpenVPN for Android</a></dt>
+  <dd>
+    Client to connect to my VPN server.
+  </dd>
+
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=osmand&fdid=net.osmand.plus">OsmAnd</a></dt>
   <dd>Offline/online maps and navigation with <a href="http://www.openstreetmap.org">OpenStreetMap</a></dd>
 
-  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=owncloud&fdid=com.owncloud.android">ownCloud</a></dt>
-  <dd>View and upload files from/to my <a href="http://owncloud.org/">ownCloud</a> instance</dd>
+  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=nextcloud&fdid=com.nextcloud.client">Nextcloud</a></dt>
+  <dd>View and upload files from/to my <a href="https://nextcloud.com/">Nextcloud</a> instance</dd>
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=practice%20hub&fdid=com.proch.practicehub">Practice Hub</a></dt>
   <dd>
@@ -122,7 +127,7 @@ image:
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=tomdroid&fdid=org.tomdroid">Tomdroid</a></dt>
   <dd>
     A note taking application.<br />
-    Syncs with my owncloud instance through the <a href="http://cweiske.de/grauphel.htm">grauphel plugin</a>.
+    Syncs with my Nextcloud instance through the <a href="http://cweiske.de/grauphel.htm">grauphel plugin</a>.
   </dd>
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=transportr&fdid=de.grobox.liberario">Transportr</a></dt>
