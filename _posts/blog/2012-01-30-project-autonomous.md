@@ -21,7 +21,8 @@ Here's a quick list of what's working at the moment:
   <dt id="avatars"><a href="https://avatars.chromic.org">avatars.chromic.org</a></dt>
   <dd>
     <a href="http://sourceforge.net/p/surrogator/wiki/Home/">Surrogator</a>: a <a href="https://www.libravatar.org/">Libravatar</a> compatible avatar image server.<br />
-    Gravatar replacement
+    Gravatar replacement<br />
+    My <a href="https://gnu.io/social/">GNU social</a> instance and <a href="https://gogs.io/">Gogs</a> instance use this.
   </dd>
 
   <dt id="auth"><a href="https://auth.chromic.org">auth.chromic.org</a></dt>

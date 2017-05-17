@@ -14,7 +14,7 @@ image:
 <h2 id="beginning">And so it Begins</h2>
 <p>I've always been fascinated by electronics and computers.</p>
 <p>I remember spending countless hours messing around with one of those "Electronic Project Kits" similar to the one pictured above.</p>
-<p>I followed every instruction in the book, went off-course and tried new things. Sometimes succeeding, sometimes failing.</p>
+<p>I followed every instruction in the book, went off-course and tried new things.</p>
 </div>
 <!-- more -->
 
@@ -22,7 +22,7 @@ image:
 <p>Sometime around 1996 (at approximately 11 years old), my school organized a few different summer camps. One of them was computer related and, of course, piqued my interest.</p>
 <p>During the summer, we worked on a few different projects. The one I remember best was creating websites, and if I recall correctly, this was my first introduction to HTML.</p>
 <p>My website definitely looked like the classic Geocities site with &lt;blink&gt; and &lt;marquee&gt; tags, tacky .gifs, non-semantic &lt;font&gt; and tiled background patterns, and I was damn proud of it!</p>
-<p>Once the camp was over, I went back home, built websites with Notepad and saved them on my C:\ drive since we didn't have home Internet at the time. I didn't have an audience&nbsp;&mdash; and probably still don't <abbr class="emoticon" title="wink">;)</abbr>&nbsp;&mdash; learned by trial and error, but I was learning and had fun doing it, damnit!</p>
+<p>Once the camp was over, I went back home, built websites with Notepad and saved them on my C:\ drive since we didn't have home Internet at the time. I didn't have an audience&nbsp;&mdash; and probably still don't <abbr class="emoticon" title="wink">;)</abbr>&nbsp;&mdash; learned by trial and error, but I was learning and had fun doing it.</p>
 
 <h2 id="online">Online!</h2>
 <p>Once we got the Inter-tubes connected to our house, I started signing up for those "free hosting" sites that would give you a free subdomain.</p>
@@ -43,7 +43,7 @@ image:
 
 <h2 id="hosting">Legit Hosting</h2>
 <p>In 2009, I was 2 years out of university, had a job and a bit of money to invest into a host that was a bit more reliable than those free ones.</p>
-<p>After thinking way too much about a hostname, I settled on "chromic" mostly because my online nickname, Chimo, is part of it (genius, I know, right?).</p>
+<p>After thinking way too much about a domain name, I settled on "chromic" mostly because my online nickname, Chimo, is part of it (genius, I know, right?).</p>
 <p>Since this was my first shot at paying for hosting, I looked for something inexpensive and chose <a href="http://dreamhost.com">Dreamhost</a> Shared Hosting.</p>
 <p>One of the first things I did was to setup a Wordpress instance on there to move off Wordpress.com, "customize ALL the things!" and dive into the source code.</p>
 
@@ -56,7 +56,7 @@ image:
 <p>Part of it is probably because Identi.ca's user-base was smaller compared to the bigger networks. Maybe the culture <em>actually is</em> different as well. I don't know. Either way, the <a href="http://oracle.skilledtests.com/group/fediverse">!fediverse</a> is where I felt the most "at home".</p>
 <p>(Un)fortunately, identi.ca <a href="http://whird.jpope.org/identifailed-me-last-time/">sometimes had problems</a> with its uptime and general reliability, and after a while it started to happen too often for my taste.</p>
 <p>This led me to look into hosting my own StatusNet instance, and I believe that while it might have been a minor annoyance at the time, it really was a good thing in the end.</p>
-<p>I got lucky and StatusNet was one of Dreamhost's "one-click install" products. So I clicked. And it installed. And it was slow. And Realtime wasn't reliable (or not there at all, I can't quite remember now).</p>
+<p>I got lucky and StatusNet was one of Dreamhost's "one-click install" products. So I clicked. And it installed. And it was slow. And Realtime wasn't reliable (or not there at all, I can't quite remember now), but it was <em>mine</em>.</p>
 
 <h2 id="vps">Graduating to a <abbr title="Virtual Private Server">VPS</abbr></h2>
 <p>In 2011, I felt like being on a Shared Host was too limiting (I really wanted Realtime running on my <abbr title="StatusNet">SN</abbr> instance, too!).</p>
@@ -65,7 +65,7 @@ image:
 <p>Want to run a persistent process and eat all of your RAM? Yep! Been there, done that!</p>
 <p>Want to deal with MySQL logs and fine-tuning? No? Well you still have to!</p>
 <p>Of course, these are all things I ultimately enjoy doing and really like learning from so I don't mind.</p>
-<p>As you can imagine, I then went ahead and setup a StatusNet instance, this time taking care of all the fun things related to Webservers and Databases, etc.</p>
+<p>As you can imagine, I then went ahead and setup a StatusNet instance, this time taking care of all the fun things related to web servers, databases, etc.</p>
 <p>Administering a VPS&nbsp;&mdash; even a small, personal one&nbsp;&mdash; is something I highly recommend to anyone interested in learning sysadmin-type material. The amount of things I learned while tinkering with mine is astounding.</p>
 
 <h2 id="today">Today</h2>
@@ -73,10 +73,10 @@ image:
 <p>I tinker with a bunch of other languages.</p>
 <p>I'm a big fan of owning your data (to a certain degree, I suppose; I don't own the hardware I'm hosted on&hellip; yet).</p>
 <p>I'm continually working on my <a href="http://chromic.org/articles/project-autonomous#cont">Project Autonomous</a> which serves as both a way to own my data and also as a learning tool.</p>
-<p>I'm still messing around with <a href="https://github.com/chimo">code</a> and tech.</p>
+<p>I'm still messing around with <a href="https://code.chromic.org/chimo">code</a> and tech.</p>
 <p>I'm still fascinated by electronics and computers (I <abbr class="emoticon" title="love">&lt;3</abbr> my RaspberryPi), still a (FL)OSS advocate, Linux-running (Arch <abbr title="for the win">FTW</abbr>!), federation-supporting, rambling nerd.</p>
 
 <h2 id="future">The Future</h2>
 <p>Who knows!</p>
 <p>I'm planning on tinkering with all this for a long time still.</p>
-<p>Technology changes so often and so fast (<q cite="http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s04.html">release early, release often</q>) that I can't imagine getting bored of it.</p>
+<p>Technology changes so often and so fast that I can't imagine getting bored of it.</p>

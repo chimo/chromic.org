@@ -53,7 +53,7 @@ tags: [push, pubsubhubbub, realtime, lifestream]
     Self-hosted: Everything needs to run on a machine/VM I own/rent (most
     of this stuff is on a Linode)
   </li>
-  <li>Open Source / Free Software: Everything I run needs to be (F)OSS</li>
+  <li>Open Source / Free Software: Everything I run needs to be F(L)OSS</li>
 </ol>
 
 <p>
