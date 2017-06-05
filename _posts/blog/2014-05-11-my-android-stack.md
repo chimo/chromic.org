@@ -122,12 +122,6 @@ image:
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=scrobbler&fdid=com.adam.aslfms">Simple Last.fm Scrobbler</a></dt>
   <dd>A music scrobbler. Modified to submit to my <a href="https://gnu.io/fm/">GNU FM</a> instance.</dd>
 
-  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=tomdroid&fdid=org.tomdroid">Tomdroid</a></dt>
-  <dd>
-    A note taking application.<br />
-    Syncs with my Nextcloud instance through the <a href="http://cweiske.de/grauphel.htm">grauphel plugin</a>.
-  </dd>
-
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=transportr&fdid=de.grobox.liberario">Transportr</a></dt>
   <dd>
     Public Transport Companion.
