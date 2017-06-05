@@ -30,9 +30,6 @@ image:
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=barcode&fdid=com.google.zxing.client.android">Barcode Scanner</a></dt>
   <dd>Barcode Scanner</dd>
 
-  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=connectbot&fdid=org.connectbot">ConnectBot</a></dt>
-  <dd>SSH Client</dd>
-
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=conversations&fdid=eu.siacs.conversations">Conversations</a></dt>
   <dd>
     Jabber (XMPP) client.<br />
