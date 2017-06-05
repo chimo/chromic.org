@@ -133,6 +133,11 @@ image:
     Public Transport Companion.
   </dd>
 
+  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=termux&fdid=com.termux">Termux</a></dt>
+  <dd>
+    Terminal and SSH client.
+  </dd>
+
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=wallabag&fdid=fr.gaulupeau.apps.InThePoche">wallabag</a></dt>
   <dd>
     <a href="https://wallabag.org/">Wallabag</a> client.<br />
