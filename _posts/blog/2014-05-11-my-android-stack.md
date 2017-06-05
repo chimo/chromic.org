@@ -54,6 +54,9 @@ image:
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=hn&fdid=com.manuelmaly.hn">HN</a></dt>
   <dd>Hacker News client</dd>
 
+  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=icecat&fdid=org.gnu.icecat">IceCat</a></dt>
+  <dd>Browser (Gecko-based).</dd>
+
   <dt><a href="https://github.com/j4velin/IR-Remote">IR-Remote</a></dt>
   <dd>Infra-red remote controller for my Tv and soundbar.</dd>
 
@@ -73,9 +76,6 @@ image:
     Remote control for <a href="http://kodi.tv">Kodi</a>&nbsp;&mdash;&nbsp;Open Source Home Theatre<br />
     I run Kodi on my <a href="https://www.raspberrypi.org">Raspberry Pi</a>.
   </dd>
-
-  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=lightning&fdid=acr.browser.lightning">Lightning</a></dt>
-  <dd>Web browser</dd>
 
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=newpipe&fdid=org.schabi.newpipe">NewPipe</a></dt>
   <dd>
