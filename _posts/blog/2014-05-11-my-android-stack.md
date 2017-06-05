@@ -57,6 +57,9 @@ image:
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=icecat&fdid=org.gnu.icecat">IceCat</a></dt>
   <dd>Browser (Gecko-based).</dd>
 
+  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=icsdroid&fdid=at.bitfire.icsdroid">ICSdroid</a></dt>
+  <dd>Synchronize remote ICS calendars to the native Android calendar app</dd>
+
   <dt><a href="https://github.com/j4velin/IR-Remote">IR-Remote</a></dt>
   <dd>Infra-red remote controller for my Tv and soundbar.</dd>
 
