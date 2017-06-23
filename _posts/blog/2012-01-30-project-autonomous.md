@@ -116,6 +116,12 @@ Here's a quick list of what's working at the moment:
     Social media platform similar to Twitter.
   </dd>
 
+  <dt id="watching"><a href="https://watching.chromic.org">watching.chromic.org</a></dt>
+  <dd>
+    A "<a href="https://github.com/devfake/flox">Flox</a>" instance.<br />
+    A personal Trakt.tv replacement
+  </dd>
+
   <dt id="webmention"><a href="https://webmention.chromic.org">webmention.chromic.org</a></dt>
   <dd>
     A "<a href="https://webmention.io/">webmention.io</a>" instance.<br />
