@@ -1,7 +1,7 @@
 ---
 title: Project Autonomous
 description: "List of self-hosted software I'm using"
-modified: 2016-12-03
+modified: 2017-06-23
 categories: blog
 tags: [sysadmin, foss, floss, autonomous]
 image:
@@ -58,11 +58,11 @@ Here's a quick list of what's working at the moment:
   <dt id="files"><a href="https://files.chromic.org">files.chromic.org</a></dt>
   <dd>
     An <a href="https://nextcloud.com/">Nextcloud</a> instance.<br />
-    I use it as a Dropbox alternative, Google Calendar alternative, Contact
-    Manager and Notes synchronization (via <a href="http://cweiske.de/tagebuch/grauphel.htm">grauphel</a>)
-    for now, but it does more than that.<br />
+    I use it as a Dropbox alternative, Google Calendar alternative, Contact Manager
+    and Tasks synchronization for now, but it does more than that.<br />
     On Android, I use <a href="http://davdroid.bitfire.at/what-is-davdroid">DAVdroid</a>
-    to sync calendar & contacts, and <a href="https://f-droid.org/repository/browse/?fdfilter=tomdroid&fdid=org.tomdroid">Tomdroid</a> to sync notes.
+    to sync calendar &amp; contacts, and
+    <a href="https://f-droid.org/repository/browse/?fdfilter=tasks&fdid=org.dmfs.tasks">OpenTasks</a> to sync tasks.
   </dd>
 
   <dt id="fm"><a href="https://fm.chromic.org">fm.chromic.org</a></dt>
