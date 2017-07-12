@@ -1,7 +1,7 @@
 ---
 title: Project Autonomous
 description: "List of self-hosted software I'm using"
-modified: 2017-06-23
+modified: 2017-07-11
 categories: blog
 tags: [sysadmin, foss, floss, autonomous]
 image:
@@ -69,6 +69,12 @@ Here's a quick list of what's working at the moment:
   <dd>
     A <a href="http://foocorp.org/projects/fm/">GNU fm</a> instance.<br />
     <a href="http://last.fm">Last.fm</a> alternative.
+  </dd>
+
+  <dt id="irc"><a href="https://irc.chromic.org">irc.chromic.org</a></dt>
+  <dd>
+    A <a href="https://github.com/thelounge/lounge">Lounge</a> (web-based IRC client) instance.<br />
+    I use it to connect to my ZNC bouncer.
   </dd>
 
   <dt id="later"><a href="https://later.chromic.org">later.chromic.org</a></dt>
