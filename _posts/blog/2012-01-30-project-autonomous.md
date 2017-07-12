@@ -67,7 +67,7 @@ Here's a quick list of what's working at the moment:
 
   <dt id="fm"><a href="https://fm.chromic.org">fm.chromic.org</a></dt>
   <dd>
-    A <a href="http://foocorp.org/projects/fm/">GNU fm</a> instance.<br />
+    A <a href="https://gnu.io/fm/">GNU fm</a> instance.<br />
     <a href="http://last.fm">Last.fm</a> alternative.
   </dd>
 
