@@ -104,6 +104,12 @@ Here's a quick list of what's working at the moment:
     Media sharing platform similar to Flickr, Picasa, etc.
   </dd>
 
+  <dt id="podcasts"><a href="https://podcasts.chromic.org">podcasts.chromic.org</a></dt>
+  <dd>
+    A <a href="https://github.com/gpodder/mygpo">gpodder.net (mygpo)</a> instance.<br />
+    Manage and synchronize podcast subscriptions and listening progress.
+  </dd>
+
   <dt id="push"><a href="https://push.chromic.org">push.chromic.org</a></dt>
   <dd>
     A <a href="https://switchboard.p3k.io/">Switchboard</a> instance (a <a href="https://en.wikipedia.org/wiki/PubSubHubbub">PuSH</a> hub)<br />
