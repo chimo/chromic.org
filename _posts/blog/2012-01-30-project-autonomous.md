@@ -39,7 +39,7 @@ Here's a quick list of what's working at the moment:
 
   <dt id="code"><a href="https://code.chromic.org">code.chromic.org</a></dt>
   <dd>
-    <a href="http://gogs.io/">Gogs</a> instance: self-hosted Git.<br />
+    <a href="http://gitea.io/">Gitea</a> instance: self-hosted Git.<br />
     I'm using it for git repository, bug tracking and so on.
   </dd>
 
