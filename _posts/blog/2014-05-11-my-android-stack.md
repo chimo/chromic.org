@@ -1,7 +1,7 @@
 ---
 title: My Android Stack
 description: "The free, open source (FOSS) Android apps I use"
-modified: 2017-05-16
+modified: 2018-02-28
 categories: blog
 layout: post
 tags: [foss, floss, android]
@@ -151,4 +151,11 @@ image:
   <dd>
     Prevents your smartphone or tablet from leaking privacy sensitive information via Wi-Fi networks.
   </dd>
+
+  <dt><a href="https://f-droid.org/packages/net.fabiszewski.ulogger/">μlogger</a></dt>
+  <dd>
+    Location tracker.<br />
+    I use it with <a href="https://tracks.chromic.org">my instance</a> of the <a href="https://github.com/bfabiszewski/ulogger-server">μlogger server</a>.
+  </dd>
 </dl>
+
