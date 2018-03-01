@@ -119,6 +119,12 @@ image:
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=redreader&fdid=org.quantumbadger.redreader">RedReader</a></dt>
   <dd>Reddit client</dd>
 
+  <dt><a href="https://f-droid.org/packages/io.mrarm.irc/">Revolution IRC</a></dt>
+  <dd>
+    IRC client.<br />
+    I use it with <a href="https://en.wikipedia.org/wiki/ZNC">ZNC</a>.
+  </dd>
+
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=satstat&fdid=com.vonglasow.michael.satstat">SatStat</a></dt>
   <dd>GPS, sensor and network status</dd>
 
@@ -144,11 +150,5 @@ image:
   <dt><a href="https://f-droid.org/repository/browse/?fdfilter=wi-fi+privacy&fdid=be.uhasselt.privacypolice">Wi-Fi Privacy Police</a></dt>
   <dd>
     Prevents your smartphone or tablet from leaking privacy sensitive information via Wi-Fi networks.
-  </dd>
-
-  <dt><a href="https://f-droid.org/repository/browse/?fdfilter=yaaic&fdid=org.yaaic">Yaaic</a></dt>
-  <dd>
-    IRC Client.<br />
-    I use it with <a href="https://en.wikipedia.org/wiki/ZNC">ZNC bouncer</a>.
   </dd>
 </dl>
