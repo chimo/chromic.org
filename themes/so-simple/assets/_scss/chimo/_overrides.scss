@@ -1,0 +1,196 @@
+/* Default link color is blue */
+a {
+    &,
+    &:hover,
+    &:focus,
+    &:visited {
+        color: #0097bb;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Top-nav link color is white */
+.navigation-wrapper a {
+    &,
+    &:hover,
+    &:focus,
+    &:visited {
+        color: #fff;
+    }
+}
+
+/* Footer link color is dark gray */
+.footer-wrapper a {
+    &,
+    &:hover,
+    &:focus,
+    &:visited {
+        color: #555;
+    }
+}
+
+/* Sidebar link color is black */
+.entry-meta a,
+.entry-title a,
+.site-title a {
+    &,
+    &:hover,
+    &:focus,
+    &:visited {
+        color: #000;
+    }
+}
+
+.content li > a {
+    &,
+    &:hover {
+        border: 0;
+    }
+}
+
+.sidebar a:hover {
+    text-decoration: none;
+}
+
+/**
+ * Make blog post date dark gray on blog post list pages.
+ * Without this, they're link colored.
+ */
+.post-list a time {
+    color: #222;
+}
+
+
+/**
+ * 1.125rem base font-size for everything, not just <p>s
+ * Don't make <li>s smaller than everything else...
+ */
+body,
+li {
+    font-size: 1.125rem;
+}
+
+/**
+ * Only show lines under links when we hover over them.
+ */
+.entry-content {
+    a {
+        border: 0 !important;
+        color: #0097bb;
+        transition: none;
+
+        &:visited,
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+/**
+ * Flat (horizonal) tags lists
+ */
+.entry-tags {
+    list-style-position: inside;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    padding: 0 0 10px 0;
+
+    li {
+        float: left;
+        margin: 0 10px 0 0;
+
+        &:first-child {
+            list-style-type: none;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 1;
+            }
+        }
+    }
+
+   /* + .entry-title {
+        margin-top: 0;
+    } */
+}
+
+/**
+ * No underline under entry titles
+ */
+.entry-title a {
+    margin: 10px 0 20px;
+    text-decoration: none;
+}
+
+/**
+ * Stop fading in/out and moving on hover
+ */
+figure a img {
+    opacity: 1;
+
+    &:hover {
+        transform: none;
+    }
+}
+
+.entry-meta,
+.content {
+    float: none;
+    width: auto;
+}
+
+.bio-photo,
+.interactions-summary {
+    display: inline-block;
+}
+
+.entry-header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+
+    .entry-author,
+    .entry-date {
+        border-right: 1px solid #ddd;
+        display: inline;
+        margin-right: 10px;
+        padding-right: 3px;
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
+
+    a {
+        color: #000 !important;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+/* tmp */
+.homepage .content {
+    float: left;
+    width: 78.6755%;
+}
+/* /tmp */
+
+small {
+    font-size: x-small;
+}
+
+.entry-feature-image {
+    margin-bottom: 15px;
+}
+

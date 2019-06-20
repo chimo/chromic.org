@@ -1,0 +1,26 @@
+{{ partial "head.html" . }}
+
+{{ partial "navigation.html" . }}
+
+<main class="page">
+  <article class="entry-wrapper hentry h-entry">
+    <header class="entry-header">
+      <h1 class="entry-title p-name">
+        <a class="u-url" href="{{ .Permalink }}">
+          {{ .Title }}
+          <span class="link-arrow fa fa-link"></span>
+        </a>
+      </h1>
+      {{ block "tags" . }}
+      {{ end }}
+      {{ block "byline" . }}
+      {{ end }}
+    </header>
+
+    {{ block "main" . }}
+    {{ end }}
+  </article>
+</main>
+
+{{ partial "footer.html" . }}
+

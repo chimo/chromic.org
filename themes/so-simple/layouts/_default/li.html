@@ -1,0 +1,12 @@
+<li>
+  <article>
+      <a href="{{ .Permalink }}">{{ .Title }}
+          <span class="entry-date">
+            <time datetime="{{ .PublishDate }}">
+              {{ .PublishDate | dateFormat "Jan. 2, 2006" }}
+            </time>
+          </span>
+      </a>
+  </article>
+</li>
+

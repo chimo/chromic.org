@@ -1,8 +1,0 @@
-{
-    "config": {
-        "vendor-dir": "composer"
-    },
-    "require": {
-        "mibe/feedwriter": "1.0.3"
-    }
-}

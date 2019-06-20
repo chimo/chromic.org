@@ -1,0 +1,123 @@
+/**
+ * Display as block element only if JS is enabled, otherwise hidden.
+ */
+.js-display-block {
+    display: none;
+}
+
+.js .js-display-block {
+    display: block;
+}
+
+/**
+ * Hide permalink icon by default
+ */
+.link-arrow {
+    font-size: 75%;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+/**
+ * Show permalink icon on hover
+ */
+.entry-title a {
+    &:focus .link-arrow,
+    &:hover .link-arrow,
+    &:active .link-arrow {
+        visibility: visible;
+    }
+}
+
+/**
+ * Footer icons
+ */
+.social-icons img {
+    vertical-align: top;
+}
+
+.social-icons .gs {
+    opacity: 0.7;
+    position: relative;
+    top: 1px;
+    vertical-align: top;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.cc-by-sa {
+    opacity: 0.7;
+
+    img {
+        margin-bottom: 5px;
+        width: 21px;
+    }
+}
+
+.cc-by-sa:hover {
+    opacity: 1;
+}
+
+
+/**
+ * Invisible, but still read by screen readers
+ */
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
+
+/**
+ * Details polyfill
+ */
+details,
+summary {
+    display: block;
+}
+
+summary {
+    cursor: pointer;
+}
+
+.no-details details {
+    > * {
+        display: none;
+    }
+
+    > summary::before {
+        content: "► ";
+        float: left;
+        width: 20px;
+    }
+
+    &.open > summary::before {
+        content: "▼ ";
+    }
+
+    summary {
+        display: block;
+    }
+}
+
+.btn--small {
+    padding: 4px 10px;
+}
+
+/* Realtime nav */
+.rt-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+

@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>
+            {{ .Title }} | {{ .Site.Title }}
+        </title>
+
+        <!-- TODO: tags -->
+
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="self" href="{{ .Permalink }}">
+<link rel="alternate" href="{{ .Site.BaseURL }}feed.xml" type="application/atom+xml" title="{{ .Site.Title }} Feed">
+
+<!-- Webmentions/pingbacks -->
+<link rel="pingback" href="https://webmention.chromic.org/chromic.org/xmlrpc" />
+<link rel="webmention" href="https://webmention.chromic.org/chromic.org/webmention" />
+
+<!-- Micropub -->
+<link rel="micropub" href="https://micropub.chromic.org/" />
+<link rel="token_endpoint" href="https://tokens.chromic.org/token" />
+
+<!-- Microsub -->
+<link rel="microsub" href="https://microsub.chromic.org/microsub/1" />
+
+<!-- IndieAuth -->
+<link rel="authorization_endpoint" href="https://auth.chromic.org/auth">
+
+<!-- OpenID -->
+<link rel="openid.delegate" href="https://chromic.org" />
+<link rel="openid.server" href="https://auth.chromic.org/openid" />
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Styles -->
+<link rel="stylesheet" href="/css/extlib/ol.css">
+<link rel="stylesheet" href="/css/extlib/fragmentioner.css">
+
+{{ $options := (dict "targetPath" "/css/styles.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+{{ $style := resources.Get "_scss/main.scss" | toCSS $options | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+</head>
+
+<body>

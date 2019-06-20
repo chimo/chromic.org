@@ -1,0 +1,11 @@
+{{ define "main" }}
+    <div class="content">
+      <div class="entry-content e-content">
+         <ul class="post-list">
+           {{ range .Data.Pages }}
+             {{ .Render "li"}}
+           {{ end }}
+         </ul>
+       </div>
+     </div>
+{{ end }}

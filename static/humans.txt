@@ -1,0 +1,18 @@
+/* TEAM */
+    MOTU:           Chimo Omich
+    Contact:        chimo [at] chromic.org
+    GNU social:     @chimo@sn.chromic.org
+    Twitter:        @chim0
+    Github:         chimo
+    Location:       Ottawa, Ontario, Canada
+
+/* THANKS */
+    Designer:       Michael Rose <https://mademistakes.com>
+    Theme:          So Simple <https://github.com/mmistakes/so-simple-theme>
+    Twitter:        @mmistakes
+
+/* SITE */
+    Language:       English
+    Built with:     Hugo <https://gohugo.io>
+                    vim <http://vim.org>
+

@@ -1,0 +1,34 @@
+{{ partial "head.html" . }}
+
+{{ partial "navigation.html" . }}
+
+<div id="main" role="main" class="h-feed homepage">
+  <div class="entry-wrapper">
+    {{ .Content }}
+
+    <div class=""> <!-- used to be 'sidebar' -->
+      <h2>Blog Posts</h2>
+
+      <ul class="post-list">
+      {{ range where .Pages "Section" "blog" }}
+        <li>
+          <article class="h-entry">
+            <a class="u-url" href="{{ .Permalink }}">
+              <span class="p-name" style="margin-top: 0;">{{ .Title }}</span>
+              <span class="entry-date">
+                <time class="dt-published"
+                    datetime="{{ .PublishDate }}">
+                      {{ .PublishDate | dateFormat "Jan. 2, 2006" }}
+                </time>
+              </span>
+            </a>
+          </article>
+        </li>
+      {{ end }}
+      </ul>
+    </div>
+  </div><!-- /.entry-wrapper -->
+</div><!-- /#main -->
+
+{{ partial "footer.html" . }}
+

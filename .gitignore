@@ -1,12 +1,2 @@
-/vendor
-_config.php
-.DS_Store
-*.sublime-project
-*.sublime-workspace
-codekit-config.json
-node_modules
-.sass-cache
-.jekyll-metadata
-/composer
-/xrd/*.xml
-
+public
+resources
