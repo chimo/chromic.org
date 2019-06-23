@@ -4496,4 +4496,11 @@ summary {
     display: inline-block;
     margin-right: 10px; }
 
+.main-content figure,
+.main-content figcaption {
+  margin: 0;
+  padding: 0; }
+.main-content figcaption {
+  font-weight: bold; }
+
 /*# sourceMappingURL=styles.css.map */
