@@ -12,7 +12,10 @@
 
 <link rel="canonical" href="{{ .Permalink }}">
 <link rel="self" href="{{ .Permalink }}">
-<link rel="alternate" href="{{ .Site.BaseURL }}feed.xml" type="application/atom+xml" title="{{ .Site.Title }} Feed">
+
+{{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
 
 <!-- Webmentions/pingbacks -->
 <link rel="pingback" href="https://webmention.chromic.org/chromic.org/xmlrpc" />
