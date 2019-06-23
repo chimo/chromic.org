@@ -25,8 +25,9 @@ tags: [rtl, radio, weather]
   sensor by filtering by sensor id (there are a couple other wireless sensors
   around it seems), keep only the last reading, do some calibration with `jq`
   again and write the final JSON to a file. I then point nginx to that file,
-  serve it with a 'application/json' Content-Type and boom: local weather
-  accessible remotely. Why? No idea, but it's kind of neat.
+  serve it with a 'application/json' Content-Type and boom: <a
+  href="https://weather.chromic.org/">local weather accessible remotely</a>.
+  Why? No idea, but it's kind of neat.
 </p>
 
 {{< highlight bash >}}
