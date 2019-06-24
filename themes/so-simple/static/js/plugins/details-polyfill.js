@@ -1,3 +1,0 @@
-( function( $ ) {
-    $( "details" ).details();
-}( jQuery ) );
