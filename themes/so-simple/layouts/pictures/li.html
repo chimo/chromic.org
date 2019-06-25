@@ -1,0 +1,28 @@
+{{ $original := $.Resources.GetMatch "original.*" }}
+{{ $thumbnail := $.Resources.GetMatch "thumbnail.*" }}
+
+<li class="thumbnail-list__item h-entry">
+    <a class="thumbnail-list__link u-url" href="{{ .Permalink }}">
+      <figure class="thumbnail">
+        {{ if $thumbnail }}
+        <img class="thumbnail__image u-photo"
+             src="{{ $thumbnail.Permalink }}" alt="">
+        {{ else }}
+        {{ $generated_thumbnail := $original.Fill "167x167" }}
+        <img class="thumbnail__image u-photo"
+             src="{{ $generated_thumbnail.Permalink }}" alt="">
+        {{ end }}
+
+        <figcaption class="thumbnail__title p-name">{{ .Title }}</figcaption>
+      </figure>
+    </a>
+
+    <!-- mf2 -->
+    <div style="display: none;">
+      <time class="dt-published"
+          datetime='{{ .Date.Format "2006-01-02T15:04:05-07:00" }}'>
+        {{ .Date.Format "2006-01-02T15:04:05-07:00" }}
+      </time>
+    </div>
+</li>
+

@@ -1,0 +1,18 @@
+{{ define "byline" }}
+<!-- pass -->
+{{ end }}
+
+{{ define "main" }}
+    <div class="pictures media">
+      <ul class="thumbnail-list">
+        {{ range .Data.Pages.ByDate.Reverse }}
+          {{ .Render "li"}}
+        {{ end }}
+      </ul>
+    </div>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "common/site-footer-with-author.html" . }}
+{{ end }}
+

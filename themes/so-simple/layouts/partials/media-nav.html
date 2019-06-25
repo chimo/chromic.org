@@ -1,0 +1,42 @@
+{{/*
+  NextInSection uses the left-pointing arrow, because NextInSection points to
+  an newer item than the current item, and we want to traverse picture from
+  newest-to-oldest (same order as the main "gallery" page where newer pictures
+  show up first).
+
+  Same idea with PrevInSection using the right-pointing arrow.
+*/}}
+
+<nav>
+  <ul class="media__nav">
+    {{ if .NextInSection }}
+      <li>
+        <a href="{{ .NextInSection.Permalink }}" rel="prev" title="Previous picture"><span class="fa fa-arrow-left" aria-hidden="true"></span></a>
+      </li>
+    {{ else }}
+      <li class="disabled">
+        <span class="fa fa-arrow-left" aria-hidden="true"></span>
+      </li>
+    {{ end }}
+    <li>
+      <a href="/pictures" title="Back to media gallery"><span class="fa fa-list" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a class="js-panel-toggle" href="#metadata" title="Picture metadata"><span class="fa fa-info" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a download="download" href="original.jpg" title="Download original picture">
+        <span class="fa fa-download" aria-hidden="true"></span>
+      </a>
+    </li>
+    {{ if .PrevInSection }}
+      <li>
+        <a href="{{ .PrevInSection.Permalink }}" rel="next" title="Next picture"><span class="fa fa-arrow-right" aria-hidden="true"></span></a>
+      </li>
+    {{ else }}
+      <li class="disabled">
+          <span class="fa fa-arrow-right" aria-hidden="true"></span>
+      </li>
+    {{ end }}
+  </ul>
+</nav>

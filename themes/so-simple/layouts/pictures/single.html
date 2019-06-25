@@ -1,0 +1,51 @@
+{{ define "local-nav" }}
+  {{ partial "media-nav.html" . }}
+{{ end }}
+
+{{ define "main" }}
+    <div class="media h-entry">
+
+      {{ $original := $.Page.Resources.GetMatch "original.*" }}
+      {{ $medium := $original.Resize "1170x" }}
+
+      <figure class="media__wrapper">
+        <div class="pic-wrapper">
+            <a class="media__link" href="{{ $original.Permalink }}">
+            <img class="media__content u-photo"
+               src="{{ $medium.Permalink }}" alt="{{ .Title }}">
+          </a>
+
+          <nav class="pic-nav">
+            <ul class="pic-nav-links-list">
+              {{ if .NextInSection }}
+              <li>
+                <a class="pic-nav-link pic-nav-link--prev"
+                   href="{{ .NextInSection.Permalink }}#title" rel="prev"
+                   title="Previous picture"></a>
+              </li>
+              {{ end }}
+
+              {{ if .PrevInSection }}
+                <li>
+                  <a class="pic-nav-link pic-nav-link--next"
+                     href="{{ .PrevInSection.Permalink }}#title" rel="next"
+                     title="Next picture"></a>
+                </li>
+              {{ end }}
+            </ul>
+          </nav>
+        </div>
+
+        {{/* Only print figcaption if there is content */}}
+        {{ with .Content }}
+        <figcaption class="media__description e-content">
+          {{ . }}
+        </figcaption>
+        {{ end }}
+
+      </figure>
+
+      {{ partial "media-panel.html" . }}
+    </div>
+{{ end }}
+

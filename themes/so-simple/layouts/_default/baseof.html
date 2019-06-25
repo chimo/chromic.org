@@ -5,8 +5,10 @@
 <main class="page">
   <article class="entry-wrapper hentry h-entry">
     <header class="entry-header">
+      {{ block "local-nav" . }}
+      {{ end }}
       <h1 class="entry-title p-name">
-        <a class="u-url" href="{{ .Permalink }}">
+        <a id="title" class="u-url" href="{{ .Permalink }}">
           {{ .Title }}
           <span class="link-arrow fa fa-link"></span>
         </a>
@@ -14,6 +16,40 @@
       {{ block "tags" . }}
       {{ end }}
       {{ block "byline" . }}
+        <!-- Author info -->
+        <div class="entry-author h-card">
+          <a class="u-url" href="http://chromic.org">
+            <img alt="Chimo bio photo" class="bio-photo u-photo"
+              src="https://avatars.chromic.org/avatar/1dfffb55178d6085935eafacf1a383a1"
+              style="height: 24px; width: 24px; vertical-align: top;" />
+            <span class="by-line">
+              <span class="sr-only">By</span>
+              <span class="p-author p-name" href="">Chimo</span>
+            </span>
+          </a>
+        </div>
+
+        <!-- Date published -->
+        <div class="entry-date date published">
+          <span title="Date published">
+            <i class="fa fa-calendar-o"></i>
+            <span class="sr-only">Date published</span>
+          </span>
+          <time class="dt-published" datetime="{{ .PublishDate }}">
+            {{ .PublishDate| dateFormat "Jan. 2, 2006" }}
+          </time>
+        </div>
+
+        <!-- Date modified -->
+        <div class="entry-date date modified">
+          <span title="Date modified">
+            <i class="fa fa-pencil"></i>
+            <span class="sr-only">Date modified</span>
+          </span>
+          <time class="dt-updated" datetime="{{ .Lastmod }}">
+            {{ .Lastmod | dateFormat "Jan. 2, 2006" }}
+          </time>
+        </div>
       {{ end }}
     </header>
 

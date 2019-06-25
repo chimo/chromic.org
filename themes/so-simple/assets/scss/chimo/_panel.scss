@@ -1,0 +1,111 @@
+/**
+ * Panel
+ */
+
+.panel {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 40px;
+  overflow: auto;
+  padding-bottom: 40px;
+  top: 0;
+}
+
+.panel__close:hover {
+  color: #ad0000;
+}
+
+.panel__close {
+  background: none;
+  border: 0;
+  color: #ce0000;
+  cursor: pointer;
+  display: none;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.panel .profile {
+  padding-bottom: 5px;
+}
+
+/**
+ * Metadata
+ */
+
+.metadata {
+  font-size: 75%;
+  line-height: 33px; /* TODO: remove this and fix spacing with margins instead */
+  margin: 0;
+  padding: 0;
+}
+
+.metadata__term,
+.metadata__description {
+  padding: 0 15px 0 0;
+}
+
+.metadata__term {
+  font-weight: bold;
+}
+
+.metadata__description {
+  border-bottom: 1px solid #ddd;
+  margin: 0 0 8px 0;
+  padding-bottom: 8px;
+}
+
+.metadata__description:last-child {
+  border: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 640px) {
+  .js .panel {
+    border-bottom: 0;
+    border-right: 1px solid #ddd;
+    margin-bottom: 0;
+    position: fixed;
+    padding-bottom: 0;
+    transition: visibility 0s linear 0.5s, left 0.5s linear;
+    width: 280px;
+  }
+
+  .js .panel__close {
+    display: block;
+  }
+
+  .panel__title {
+    text-align: center;
+  }
+
+  .metadata__term,
+  .metadata__description {
+    padding: 0 15px;
+  }
+
+  /* TODO:
+   *   - animations shouldn't be tied to panel
+   *   - to figure out the width, use a 'grid'-type class
+   *   - we can have a default width for panel and panel.slide-{in,out} could hold only 1 property: that width.
+   **/
+
+  /**
+   * Animations
+   */
+
+  .js .panel.slide-in {
+    left: 0;
+    transition-delay: 0s;
+    visibility: visible;
+  }
+
+  .js .panel.slide-out {
+    left: -280px;
+    visibility: hidden;
+  }
+}

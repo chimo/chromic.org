@@ -1,0 +1,101 @@
+{{ $original := $.Page.Resources.GetMatch "original.*" }}
+
+{{/*
+  Use frontmatter lat/lon/date if they're defined. If not, fallback to the
+  image's exif data.
+
+  Note: Variables set in a `if` block aren't accessible outside of it, so store
+  them in Scratch. We set them as regular variables afterwards for convenience.
+*/}}
+
+{{ if isset .Params "latitude" }}
+  {{ .Scratch.Set "lat" .Params.latitude }}
+{{ else }}
+  {{ with $original.Exif }}
+    {{ $.Scratch.Set "lat" .Lat }}
+  {{ end }}
+{{ end }}
+
+{{ if isset .Params "longitude" }}
+  {{ .Scratch.Set "lon" .Params.longitude }}
+{{ else }}
+  {{ with $original.Exif }}
+    {{ $.Scratch.Set "lon" .Long }}
+  {{ end }}
+{{ end }}
+
+{{ if isset .Params "datetaken" }}
+  {{ .Scratch.Set "datetaken" .Params.datetaken }}
+{{ else }}
+  {{ with $original.Exif }}
+    {{ $.Scratch.Set "datetaken" .Date }}
+  {{ end }}
+{{ end }}
+
+{{/* FIXME: Should we fallback to date published if undefined at this point? */}}
+
+{{ $lat := .Scratch.Get "lat" }}
+{{ $lon := .Scratch.Get "lon" }}
+{{ $datetaken := .Scratch.Get "datetaken" }}
+
+<div id="metadata" class="panel js-panel slide-out" tabindex="-1">
+  <h2 class="panel__title">Metadata</h2>
+
+  <dl class="metadata">
+    {{if $datetaken }}
+    <dt class="metadata__term">Date Taken</dt>
+    <dd class="metadata__description">
+      <time datetime="{{ $datetaken }}">
+        {{ $datetaken | dateFormat "Jan. 2, 2006 at 15:04 MST" }}
+      </time>
+    </dd>
+    {{ end }}
+
+    {{ if (or (isset .Params "address2") (isset .Params "address1") ($lat)) }}
+    <dt class="metadata__term">Location</dt>
+    <dd class="metadata__description">
+      {{ .Params.address1 }}{{ if isset .Params "address2" }},<br>
+      {{ .Params.address2 }}{{ end }}
+
+      {{ if and $lat $lon }}
+        {{ if (and (not (isset .Params "address2")) (not (isset .Params "address1"))) }}
+          <a href="http://www.openstreetmap.org/?mlat={{ $lat }}&mlon={{ $lon }}#map=18/{{ $lat }}/{{ $lon }}"
+             target="_blank" title="Show location on map">{{ $lat }}, {{ $lon }}
+             <span class="fa fa-map-marker" aria-hidden="true"></span></a>
+        {{ end }}
+      {{ else }}
+        <a href="http://www.openstreetmap.org/?mlat={{ $lat }}&mlon={{ $lon }}#map=18/{{ $lat }}/{{ $lon }}"
+          target="_blank" title="Show location on map"><span class="fa fa-map-marker" aria-hidden="true"></span></a>
+      {{ end }}
+    </dd>
+    {{ end }}
+
+    <dt class="metadata__term">Size</dt>
+    <dd class="metadata__description">{{ .Params.size }} <abbr title="megabytes">MB</abbr></dd>
+
+    <dt class="metadata__term">Resolution</dt>
+    <dd class="metadata__description">{{ .Params.resolution }}</dd>
+
+    <dt class="metadata__term">Camera</dt>
+    <dd class="metadata__description">{{ .Params.camera }}</dd>
+
+    <dt class="metadata__term">Taken By</dt>
+    <dd class="metadata__description">{{ partial "p-author.html" . }}</dd>
+
+    <!-- mf2 -->
+    <dt style="display: none;">Date Published</dt>
+    <dd style="display: none;">
+      <time class="dt-published" datetime='{{ .Date.Format "2006-01-02T15:04:05-07:00" }}'>
+        {{ .Date.Format "2006-01-02T15:04:05-07:00" }}
+      </time>
+    </dd>
+  </dl>
+
+  <button class="panel__close js-panel-close">
+    <span class="fa fa-close" aria-hidden="true"></span>
+
+    <!-- TODO: .screenreader class -->
+    <span class="screenreaders" style="display: none;">Close panel</span>
+  </button>
+</div>
+

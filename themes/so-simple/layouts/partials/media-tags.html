@@ -1,0 +1,13 @@
+{{/*
+  TODO:
+    - Announce 'tags' section (h2? figcaption?)
+    - I want the media tags to have '/picture/tags/$tag' (or '/media/tags/$tag') as urls
+      and article to have '/articles/tags/$tag', etc.
+*/}}
+
+<ul class="tags">
+  {{ range .tags }}
+    <li class="tag"><a class="p-category" href="/tags/{{ . | urlize }}">{{ . }}</a></li>
+  {{ end }}
+</ul>
+

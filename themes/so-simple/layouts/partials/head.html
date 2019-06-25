@@ -1,14 +1,15 @@
 <!doctype html>
 <html class="no-js" lang="en">
 
-    <head>
-        <meta charset="utf-8">
+<head>
 
-        <title>
-            {{ .Title }} | {{ .Site.Title }}
-        </title>
+<meta charset="utf-8">
 
-        <!-- TODO: tags -->
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+
+<script>
+    document.querySelector("html").classList.replace("no-js", "js");
+</script>
 
 <link rel="canonical" href="{{ .Permalink }}">
 <link rel="self" href="{{ .Permalink }}">
@@ -39,10 +40,6 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Styles -->
-<link rel="stylesheet" href="/css/extlib/ol.css">
-<link rel="stylesheet" href="/css/extlib/fragmentioner.css">
 
 {{ $options := (dict "targetPath" "/css/styles.css" "outputStyle" "compressed" "enableSourceMap" true) }}
 {{ $style := resources.Get "scss/main.scss" | toCSS $options | minify | fingerprint }}
