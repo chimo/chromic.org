@@ -3,11 +3,9 @@ name: default
 
 steps:
 - name: build
-  image: cbrgm/drone-hugo:latest
-  settings:
-    hugo_version: 0.55
-    pull: always
-    url: https://chromic.org
+  image: klakegg/hugo:0.55.6-ext-alpine
+  commands:
+    - hugo
 
 - name: deploy
   image: appleboy/drone-scp
