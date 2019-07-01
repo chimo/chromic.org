@@ -1,0 +1,6 @@
+# Security address
+Contact: security@chromic.org
+
+# PGP key
+Encryption: https://chromic.org/assets/keys/security@chromic.org.pub
+
