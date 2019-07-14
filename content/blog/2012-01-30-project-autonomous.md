@@ -124,12 +124,6 @@ Here's a quick list of what's working at the moment:
     A reader app that talks to a <a href="https://indieweb.org/Microsub">Microsub</a> server
   </dd>
 
-  <dt id="search"><a href="https://search.chromic.org">search.chromic.org</a></dt>
-  <dd>
-    A <a href="https://searx.me/">searx</a> instance.<br />
-    A privacy-respecting, hackable metasearch engine.
-  </dd>
-
   <dt id="sn"><a href="http://sn.chromic.org">sn.chromic.org</a></dt>
   <dd>
     A <a href="http://gnu.io">GNU social</a> instance.<br />
