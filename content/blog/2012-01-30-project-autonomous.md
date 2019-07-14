@@ -2,7 +2,7 @@
 title: Project Autonomous
 description: "List of self-hosted software I'm using"
 publishdate: 2012-01-30
-lastmod: 2017-07-11
+lastmod: 2019-07-14
 categories: blog
 tags: [sysadmin, foss, floss, autonomous]
 slug: project-autonomous
@@ -49,18 +49,6 @@ Here's a quick list of what's working at the moment:
   <dd>
     <a href="http://gitea.io/">Gitea</a> instance: self-hosted Git.<br />
     I'm using it for git repository, bug tracking and so on.
-  </dd>
-
-  <dt id="comments"><a href="https://comments.chromic.org">comments.chromic.org</a></dt>
-  <dd>
-    <a href="http://posativ.org/isso/">Isso</a> instance: a commenting server similar to Disqus<br />
-    I use it on <a href="http://media.chromic.org">media.chromic.org</a> (Mediagoblin) and <a href="http://chromic.org">chromic.org</a> (Jekyll)
-  </dd>
-
-  <dt id="feeds"><a href="https://feeds.chromic.org">feeds.chromic.org</a></dt>
-  <dd>
-    A <a href="https://github.com/kylewm/woodwind">woodwind</a> instance.<br />
-    A feed reader that supports mf2 h-feed and xml feeds.
   </dd>
 
   <dt id="files"><a href="https://files.chromic.org">files.chromic.org</a></dt>
