@@ -94,12 +94,6 @@ Here's a quick list of what's working at the moment:
     A <a href="http://gmail.com">Gmail</a> replacement.
   </dd>
 
-  <dt id="media"><a href="https://media.chromic.org">media.chromic.org</a></dt>
-  <dd>
-    A <a href="http://mediagoblin.org">Mediagoblin</a> instance.<br />
-    Media sharing platform similar to Flickr, Picasa, etc.
-  </dd>
-
   <dt id="microsub"><a href="https://microsub.chromic.org">microsub.chromic.org</a></dt>
   <dd>
     A <a href="https://github.com/aaronpk/Aperture">Aperture</a> instance.<br />
