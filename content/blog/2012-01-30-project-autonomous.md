@@ -35,7 +35,7 @@ Here's a quick list of what's working at the moment:
 
   <dt id="chromic"><a href="https://chromic.org">chromic.org</a></dt>
   <dd>
-    A <a href="http://jekyllrb.com">Jekyll</a>-powered static site/blog<br />
+    A <a href="https://gohugo.io/">Hugo</a>-powered static site/blog<br />
     Publishing platform similar to Blogger.
   </dd>
 
