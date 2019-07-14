@@ -100,6 +100,12 @@ Here's a quick list of what's working at the moment:
     Media sharing platform similar to Flickr, Picasa, etc.
   </dd>
 
+  <dt id="microsub"><a href="https://microsub.chromic.org">microsub.chromic.org</a></dt>
+  <dd>
+    A <a href="https://github.com/aaronpk/Aperture">Aperture</a> instance.<br />
+    A <a href="https://indieweb.org/Microsub">Microsub</a> server.
+  </dd>
+
   <dt id="podcasts"><a href="https://podcasts.chromic.org">podcasts.chromic.org</a></dt>
   <dd>
     A <a href="https://github.com/gpodder/mygpo">gpodder.net (mygpo)</a> instance.<br />
@@ -110,6 +116,12 @@ Here's a quick list of what's working at the moment:
   <dd>
     A <a href="https://switchboard.p3k.io/">Switchboard</a> instance (a <a href="https://en.wikipedia.org/wiki/PubSubHubbub">PuSH</a> hub)<br />
     I use it to update <a href="http://chromic.org">my homepage</a> in realtime (see the "<a href="http://chromic.org/blog/lifestream-architecture/">Lifestream Architecture</a>" post for more details on how it works).
+  </dd>
+
+  <dt id="reader"><a href="https://reader.chromic.org">reader.chromic.org</a></dt>
+  <dd>
+    A <a href="https://github.com/aaronpk/Monocle">Monocle</a> instance.<br />
+    A reader app that talks to a <a href="https://indieweb.org/Microsub">Microsub</a> server
   </dd>
 
   <dt id="search"><a href="https://search.chromic.org">search.chromic.org</a></dt>
