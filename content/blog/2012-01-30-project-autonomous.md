@@ -39,7 +39,7 @@ Here's a quick list of what's working at the moment:
     Publishing platform similar to Blogger.
   </dd>
 
-  <dt id="ci"><a href="https://ci.chromic.org">ci.chromic.org</a></dt>
+  <dt id="ci">ci.chromic.org (only accessible internally)</dt>
   <dd>
     A <a href="https://drone.io/">Drone</a> instance: continuous delivery platform.<br />
     It's hooked-up to my <a href="https://gitea.io">Gitea</a> <a href="https://code.chromic.org">instance</a>.
