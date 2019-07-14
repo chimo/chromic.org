@@ -30,7 +30,7 @@ Here's a quick list of what's working at the moment:
   <dd>
     <a href="http://sourceforge.net/p/surrogator/wiki/Home/">Surrogator</a>: a <a href="https://www.libravatar.org/">Libravatar</a> compatible avatar image server.<br />
     Gravatar replacement<br />
-    My <a href="https://gnu.io/social/">GNU social</a> instance and <a href="https://gogs.io/">Gogs</a> instance use this.
+    My <a href="https://gnu.io/social/">GNU social</a> instance and <a href="https://gitea.io/">Gitea</a> <a href="https://code.chromic.org">instance</a> use this.
   </dd>
 
   <dt id="chromic"><a href="https://chromic.org">chromic.org</a></dt>
