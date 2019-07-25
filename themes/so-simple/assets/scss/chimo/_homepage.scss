@@ -1,0 +1,28 @@
+.homepage {
+    .entry-wrapper .h-card {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+        overflow: hidden;
+
+        .u-photo {
+            border-radius: 50%;
+            float: left;
+            margin-right: 20px;
+            width: 96px;
+        }
+    }
+
+    #geo-container {
+        display: none;
+    }
+
+    #geo,
+    #geo-timestamp {
+        font-size: small;
+    }
+
+    .post-list .h-entry .p-name {
+        margin-top: 0;
+    }
+}
+
