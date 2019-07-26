@@ -158,6 +158,12 @@ figure a img {
     overflow: hidden;
     padding-bottom: 10px;
 
+    .entry-author .photo {
+        height: 24px;
+        width: 24px;
+        vertical-align: top;
+    }
+
     .entry-author,
     .entry-date {
         border-right: 1px solid #ddd;
