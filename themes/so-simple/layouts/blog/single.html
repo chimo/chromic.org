@@ -20,7 +20,7 @@
       src="https://avatars.chromic.org/avatar/1dfffb55178d6085935eafacf1a383a1" />
     <span class="by-line">
       <span class="sr-only">By</span>
-      <span class="p-author p-name" href="">Chimo</span>
+      <span class="p-author p-name" href="https://chromic.org">Chimo</span>
     </span>
   </a>
 </div>
@@ -50,5 +50,39 @@
 
 {{ define "main" }}
   {{ .Content }}
+{{ end }}
+
+{{ define "webmentions" }}
+  {{ $webmentions := .Resources.Match "webmentions/*" }}
+  {{ $nb_wm := len $webmentions }}
+
+  <section class="webmentions">
+    <form action="https://webmention.chromic.org/chromic.org/webmention"
+      class="webmention-form" method="post" id="webmention_form">
+
+      <label class="webmention-form__question" for="webmention-url">
+        Have you written a response to this? Let me know the URL:
+      </label>
+
+      <div class="form-group">
+        <input class="webmention-form__url" id="webmention-url" name="source"
+          type="url">
+
+        <input class="button btn" type="submit" value="Send Webmention" />
+      </div>
+
+      <input name="target" type="hidden" value="{{ .Permalink }}">
+    </form>
+
+    {{ if ne $nb_wm 0 }}
+      <h1>Webmentions</h1>
+
+      <ol class="webmention__list" id="webmentions">
+        {{ range $webmentions }}
+          <li class="webmention">{{ .Content }}</li>
+        {{ end }}
+      </ol>
+    {{ end }}
+  </section>
 {{ end }}
 

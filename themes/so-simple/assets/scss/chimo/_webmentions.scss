@@ -1,0 +1,27 @@
+.webmentions {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+
+    h1 {
+        display: none; /* TODO: sr-only */
+    }
+
+    input {
+        margin-bottom: 15px;
+    }
+
+    .webmention__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .webmention {
+        padding: 10px 8px;
+
+        &:nth-child(odd) {
+            background: #eee;
+        }
+    }
+}
+

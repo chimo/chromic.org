@@ -21,7 +21,11 @@
     {{ block "main" . }}
     {{ end }}
     </div>
+
+    {{ block "webmentions" . }}
+    {{ end }}
   </article>
+
 </main>
 
 {{ partial "footer.html" . }}
