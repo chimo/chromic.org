@@ -2,7 +2,6 @@
 title: Weathered Radio
 description: ""
 publishdate: 2019-06-23
-slug: weathered-radio
 categories: blog
 tags: [rtl, radio, weather]
 ---

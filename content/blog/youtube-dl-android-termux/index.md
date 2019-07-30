@@ -3,7 +3,6 @@ title: Running youtube-dl on Android via Termux
 description: "Instructions on how to run youtube-dl on Android via Termux"
 publishdate: 2017-05-16
 lastmod: 2017-05-16
-slug: youtube-dl-android-termux
 categories: blog
 tags: [youtube, youtube-dl, android, termux]
 ---

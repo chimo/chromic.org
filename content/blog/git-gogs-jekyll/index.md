@@ -3,7 +3,6 @@ title: Git, Gogs, Jekyll and Auto-deployment
 description: "Deploying my blog on git-push"
 publishdate: 2015-05-13
 lastmod: 2015-05-13
-slug: git-gogs-jekyll
 categories: blog
 tags: [git, gogs, jekyll, blog]
 ---

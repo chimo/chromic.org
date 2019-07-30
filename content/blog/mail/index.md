@@ -3,7 +3,6 @@ title: Mail
 description: ""
 publishdate: 2019-06-05
 modified: 2019-06-05
-slug: mail
 categories: blog
 tags: [mail, neomutt, mutt, offlineimap, khard, vsyncdir, nextcloud, notmuch]
 ---

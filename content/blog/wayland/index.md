@@ -3,7 +3,6 @@ title: Trying Wayland
 description: "My adventures trying to get rid of X11"
 publishdate: 2019-03-21
 lastmod: 2019-05-19
-slug: wayland
 categories: blog
 tags: [wayland, sway]
 ---

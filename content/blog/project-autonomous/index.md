@@ -5,7 +5,6 @@ publishdate: 2012-01-30
 lastmod: 2019-07-14
 categories: blog
 tags: [sysadmin, foss, floss, autonomous]
-slug: project-autonomous
 image:
   feature: bird-sky.jpg
   credit: Hash Milhan

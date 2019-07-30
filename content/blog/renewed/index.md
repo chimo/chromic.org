@@ -3,7 +3,6 @@ title: Renewed
 description: "Plans for chromic in the near-future"
 publishdate: 2017-03-04
 lastmod: 2017-03-07
-slug: renewed
 categories: blog
 tags: [chromic, plans, meta]
 ---

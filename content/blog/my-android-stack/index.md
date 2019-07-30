@@ -6,7 +6,6 @@ lastmod: 2018-02-28
 categories: blog
 layout: post
 tags: [foss, floss, android]
-slug: my-android-stack
 image:
   feature: android.png
   credit: astanush

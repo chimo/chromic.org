@@ -3,7 +3,6 @@ title: Tripping on LXD
 description: ""
 publishdate: 2019-05-29
 lastmod: 2019-06-04
-slug: lxd
 categories: blog
 tags: [lxc, lxd, containers]
 ---

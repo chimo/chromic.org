@@ -5,7 +5,6 @@ publishdate: 2013-12-16
 lastmod: 2013-12-16
 categories: blog
 tags: [sysadmin, foss, floss, autonomous, web]
-slug: the-web-and-i
 image:
   feature: electronic-kit.jpg
   credit:  Jeff Keyzer

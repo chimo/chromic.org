@@ -3,7 +3,6 @@ title: Lifestream Architecture
 description: "An overview of how the 'lifestream' on my homepage works"
 publishdate: 2015-06-15
 lastmod: 2015-06-15
-slug: lifestream-architecture
 categories: blog
 tags: [push, pubsubhubbub, realtime, lifestream]
 ---

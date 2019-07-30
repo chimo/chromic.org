@@ -3,7 +3,6 @@ title: Aqueous Radio
 description: "Using SDR and Grafana to graph water consumption"
 publishdate: 2017-11-17
 lastmod: 2017-11-17
-slug: aqueous-radio
 categories: blog
 tags: [sdr, radio, grafana, graph, water]
 ---

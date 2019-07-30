@@ -3,7 +3,6 @@ title: Transferred
 description: "Changing domain registrars"
 publishdate: 2017-04-04
 lastmod: 2017-04-04
-slug: transferred
 categories: blog
 tags: [chromic, domain, registrar, meta]
 ---
