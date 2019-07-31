@@ -3,3 +3,5 @@ title = "chromic"
 baseurl = "https://chromic.org"
 theme = "so-simple"
 
+pygmentsUseClasses = true
+

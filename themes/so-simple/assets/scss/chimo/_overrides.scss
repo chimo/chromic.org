@@ -200,3 +200,11 @@ small {
     margin-bottom: 15px;
 }
 
+.post-list .u-url {
+    display: block;
+
+    &:hover .entry-date {
+        text-decoration: none;
+    }
+}
+
