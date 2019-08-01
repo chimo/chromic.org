@@ -6,6 +6,12 @@ steps:
   image: klakegg/hugo:0.55.6-ext-alpine
   commands:
     - hugo
+  when:
+    branch:
+    - master
+    event:
+      exclude:
+      - pull_request
 
 - name: deploy
   image: appleboy/drone-scp
