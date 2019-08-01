@@ -1,0 +1,12 @@
+<div class="u-comment h-cite">
+  <a class="u-author h-card"
+    href="{{ .Params.author.url }}"><img src="{{ .Params.author.photo }}"
+                                       class="wm-avatar"
+                                       title="{{ .Params.author.name }}'s photo"
+                                       alt="{{ .Params.author.name }}'s photo">
+      {{ .Params.author.name }}</a>
+  <p class="p-content p-name">{{ .Content }}</p>
+  <a class="u-url" href="{{ .Params.source }}">
+    <time class="dt-published">{{ .PublishDate.Format "Monday, January 2, 2006" }}</time>
+  </a>
+</div>

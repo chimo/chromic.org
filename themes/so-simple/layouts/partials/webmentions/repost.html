@@ -1,0 +1,11 @@
+<article class="p-repost h-cite">
+  <a class="p-author h-card"
+    href="{{ .Params.author.url }}"><img src="{{ .Params.author.photo }}"
+                                       class="wm-avatar"
+                                       title="{{ .Params.author.name }}'s photo"
+                                       alt="{{ .Params.author.name }}'s photo">
+      {{ .Params.author.name }}</a> reposted this on
+  <a class="u-url" href="{{ .Params.source }}"><time
+     class="dt-published">{{ .Params.publishdate }}</time></a>
+</article>
+
