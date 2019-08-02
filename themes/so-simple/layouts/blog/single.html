@@ -78,8 +78,16 @@
       <h1>Webmentions</h1>
 
       <ol class="webmention__list" id="webmentions">
-        {{ range $webmentions }}
-          <li class="webmention">{{ .Content }}</li>
+        {{ range sort $webmentions ".Params.publishdate" "desc" }}
+          {{ if eq .Params.type "like-of" }}
+            <li class="webmention webmention--like">{{ partial "webmentions/like.html" . }}</li>
+          {{ else if eq .Params.type "repost-of" }}
+            <li class="webmention webmention--repost">{{ partial "webmentions/repost.html" . }}</li>
+          {{ else if eq .Params.type "bookmark-of" }}
+            <li class="webmention webmention--bookmark">{{ partial "webmentions/bookmark.html" . }}</li>
+          {{ else }}
+            <li class="webmention webmention--reply">{{ partial "webmentions/reply.html" . }}</li>
+          {{ end }}
         {{ end }}
       </ol>
     {{ end }}
