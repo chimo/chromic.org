@@ -1,3 +1,4 @@
+*.swp
 public
 resources
 themes/so-simple/assets/scss/.sass-cache
