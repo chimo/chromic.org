@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: build
-  image: klakegg/hugo:0.55.6-ext-alpine
+  image: klakegg/hugo:0.56.3-ext-alpine
   commands:
     - hugo
   when:
