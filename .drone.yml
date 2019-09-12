@@ -3,9 +3,9 @@ name: default
 
 steps:
 - name: build
-  image: klakegg/hugo:0.56.3-ext-alpine
+  image: klakegg/hugo:0.58.1-ext-alpine
   commands:
-    - hugo
+    - hugo-official
   when:
     branch:
     - master
