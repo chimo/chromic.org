@@ -10,7 +10,8 @@
       <h2>Blog Posts</h2>
 
       <ul class="post-list">
-      {{ range where .Pages "Section" "blog" }}
+      {{ range where .Sections ".Type" "blog" }}
+      {{ range .Pages }}
         <li>
           <article class="h-entry">
             <a class="u-url" href="{{ .Permalink }}">
@@ -24,6 +25,7 @@
             </a>
           </article>
         </li>
+      {{ end }}
       {{ end }}
       </ul>
     </div>
