@@ -267,10 +267,3 @@ pre {
 	text-align: center;
 }
 
-
-// Global Transition
-// ---------------------------------------------------
-
-b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, .highlight {
-	@include transition(all .2s ease);
-}
