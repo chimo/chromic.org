@@ -66,6 +66,14 @@ Here's a quick list of what's working at the moment:
     <a href="http://last.fm">Last.fm</a> alternative.
   </dd>
 
+  <dt id="gtfs"><a href="https://gtfs.chromic.org">gtfs.chromic.org</a></dt>
+  <dd>
+    A simple, private API to retrieve public transport information from
+    imported GTFS data.<br />
+    See <a href="https://chromic.org/blog/the-road-to-gtfs/">The Road to
+    GTFS</a> for more information.
+  </dd>
+
   <dt id="irc"><a href="https://irc.chromic.org">irc.chromic.org</a></dt>
   <dd>
     A <a href="https://github.com/thelounge/lounge">Lounge</a> (web-based IRC client) instance.<br />
