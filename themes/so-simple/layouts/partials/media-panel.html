@@ -83,8 +83,8 @@
     <dd class="metadata__description">{{ partial "p-author.html" . }}</dd>
 
     <!-- mf2 -->
-    <dt style="display: none;">Date Published</dt>
-    <dd style="display: none;">
+    <dt class="mf2-hide">Date Published</dt>
+    <dd class="mf2-hide">
       <time class="dt-published" datetime='{{ .Date.Format "2006-01-02T15:04:05-07:00" }}'>
         {{ .Date.Format "2006-01-02T15:04:05-07:00" }}
       </time>
@@ -94,8 +94,7 @@
   <button class="panel__close js-panel-close">
     <span class="fa fa-times-circle" aria-hidden="true"></span>
 
-    <!-- TODO: .screenreader class -->
-    <span class="screenreaders" style="display: none;">Close panel</span>
+    <span class="sr-only">Close panel</span>
   </button>
 </div>
 
