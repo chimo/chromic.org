@@ -1,0 +1,13 @@
+{
+   "aliases" : [
+      "https://ap.chromic.org/chimo"
+   ],
+   "links" : [
+      {
+         "href" : "https://ap.chromic.org/chimo",
+         "rel" : "self",
+         "type" : "application/activity+json"
+      }
+   ],
+   "subject" : "acct:chimo@ap.chromic.org"
+}
