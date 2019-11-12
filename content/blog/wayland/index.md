@@ -2,7 +2,7 @@
 title: Trying Wayland
 description: "My adventures trying to get rid of X11"
 publishdate: 2019-03-21
-lastmod: 2019-05-19
+lastmod: 2019-11-11
 categories: blog
 tags: [wayland, sway]
 ---
@@ -53,8 +53,11 @@ tags: [wayland, sway]
 
 <p>
   On X11, I was using <a href="http://st.suckless.org/">st</a>. On Wayland, I
-  use <a href="https://github.com/majestrate/wterm">wterm</a>, which is an
-  xterm replacement based on an st fork using wld.
+  use <del><a href="https://github.com/majestrate/wterm">wterm</a>, which is an
+  xterm replacement based on an st fork using wld</del> <ins><a
+  href="https://github.com/jwilm/alacritty">alacritty</a> since I eventually
+  ran into a <a href="https://github.com/majestrate/wterm/issues/9">few</a> <a
+  href="https://github.com/majestrate/wterm/issues/7">issues</a> with wterm.
 </p>
 
 <h2>Browser</h2>
@@ -71,7 +74,7 @@ tags: [wayland, sway]
 <p>
   <a href="https://www.mozilla.org/en-CA/firefox/nightly/all/">Firefox
   Nightly</a> will use Wayland if you start it with the GDK_BACKEND environment
-  variable set to "wayland". 
+  variable set to "wayland".
 </p>
 
 <h2>PDF Viewer</h2>
