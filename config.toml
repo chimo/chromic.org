@@ -5,3 +5,8 @@ theme = "so-simple"
 
 pygmentsUseClasses = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
