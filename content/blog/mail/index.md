@@ -58,7 +58,7 @@ tags: [mail, neomutt, mutt, offlineimap, khard, vsyncdir, nextcloud, notmuch]
 <p>
   I'm using `<a href="https://github.com/scheibler/khard">khard</a>` as a
   console carddav client and used <a
-  href="https://github.com/scheibler/khard#mutt">the following settings</a> to
+  href="https://github.com/scheibler/khard/blob/57a54ace50d8f393e1a7a100d2b6224515399223/README.md#mutt">the following settings</a> to
   integrated it with (neo)mutt.
 </p>
 
