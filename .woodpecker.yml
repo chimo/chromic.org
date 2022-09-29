@@ -1,0 +1,20 @@
+pipeline:
+  build:
+    image: klakegg/hugo:0.100.2-ext-alpine
+    commands:
+      - hugo-official
+
+  deploy:
+    image: plugins/scp
+
+    settings:
+      target: /usr/share/webapps/chromic.org
+      source: public/*
+      rm: true
+      host: ${SSH_HOST}
+      username: ${SSH_USERNAME}
+      key: ${SSH_KEY}
+      port: ${SSH_PORT}
+
+branches: master
+
