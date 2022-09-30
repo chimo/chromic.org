@@ -57,7 +57,7 @@
   {{ $nb_wm := len $webmentions }}
 
   <section class="webmentions">
-    <form action="https://webmention.chromic.org/chromic.org/webmention"
+    <!--<form action="https://webmention.chromic.org/chromic.org/webmention"
       class="webmention-form" method="post" id="webmention_form">
 
       <label class="webmention-form__question" for="webmention-url">
@@ -72,7 +72,7 @@
       </div>
 
       <input name="target" type="hidden" value="{{ .Permalink }}">
-    </form>
+    </form>-->
 
     {{ if ne $nb_wm 0 }}
       <h1>Webmentions</h1>
