@@ -5,7 +5,8 @@ pipeline:
       - hugo-official
 
   deploy:
-    image: plugins/scp
+    #image: plugins/scp
+    image: appleboy/drone-scp
 
     settings:
       target: /usr/share/webapps/chromic.org
