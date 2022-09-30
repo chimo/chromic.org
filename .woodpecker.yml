@@ -12,10 +12,14 @@ pipeline:
       target: /usr/share/webapps/chromic.org
       source: public/*
       rm: true
-      host: ${SSH_HOST}
-      username: ${SSH_USERNAME}
-      key: ${SSH_KEY}
-      port: ${SSH_PORT}
+      host:
+        from_secret: ssh_host
+      username:
+        from_secret: ssh_username
+      key:
+        from_secret: ssh_key
+      port:
+        from_secret: ssh_port
 
 branches: master
 
