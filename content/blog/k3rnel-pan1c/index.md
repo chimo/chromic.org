@@ -77,7 +77,7 @@ Things I've done lately (the last couple of weeks, I think)
 	Mail revamp<br /> I had <a href="/blog/lxd/">started using LXD</a> a while
 	ago. One of the things I still needed to migrate was the mail
     infrastructure.<br />
-    <b>I went from:</b> postfix + courier-imap + courier-sasl + authdaemond +
+    <b>I went from:</b> postfix + courier-imap + cyrus-sasl + authdaemond +
     spamassassin + opendkim + opendmarc, all running on the host<br />
     <b>To:</b>  postfix + dovecot + dovecot-sasl + spamassassin + opendkim +
     opendmarc, each in their own container.
