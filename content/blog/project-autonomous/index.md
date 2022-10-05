@@ -40,8 +40,10 @@ Here's a quick list of what's working at the moment:
 
   <dt id="ci">ci.chromic.org (only accessible internally)</dt>
   <dd>
-    A <a href="https://drone.io/">Drone</a> instance: continuous delivery platform.<br />
-    It's hooked-up to my <a href="https://gitea.io">Gitea</a> <a href="https://code.chromic.org">instance</a>.
+    A <a href="https://woodpecker-ci.org/">Woodpecker CI</a> instance:
+    continuous delivery platform.<br />
+    It's hooked-up to my <a href="https://gitea.io">Gitea</a> <a
+    href="https://code.chromic.org">instance</a>.
   </dd>
 
   <dt id="code"><a href="https://code.chromic.org">code.chromic.org</a></dt>
