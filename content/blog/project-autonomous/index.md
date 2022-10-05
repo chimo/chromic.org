@@ -2,7 +2,7 @@
 title: Project Autonomous
 description: "List of self-hosted software I'm using"
 publishdate: 2012-01-30
-lastmod: 2019-07-14
+lastmod: 2022-10-05
 categories: blog
 tags: [sysadmin, foss, floss, autonomous]
 image:
@@ -89,15 +89,13 @@ Here's a quick list of what's working at the moment:
 
   <dt id="mail"><a href="https://mail.chromic.org">mail.chromic.org</a></dt>
   <dd>
-    Mail server powered by <a href="http://www.postfix.org/">postfix</a>,
-    <a href="http://www.courier-mta.org/">courier</a>,
-    <a href="http://www.courier-mta.org/maildrop/">maildrop</a>,
-    <a href="https://spamassassin.apache.org/">SpamAssassin</a>,
-    <a href="http://www.opendkim.org/">OpenDKIM</a>,
-    <a href="http://www.trusteddomain.org/opendmarc/">OpenDMARC</a>,
-    and <a href="http://roundcube.net/">roundcube</a> + its
-    <a href="https://github.com/roundcube/roundcubemail/tree/master/plugins/enigma">enigma plugin</a> for PGP support.
-    I use <a href="https://github.com/k9mail/k-9/">K-9 Mail</a> on Android.<br />
+    Mail server powered by <a href="http://www.postfix.org/">postfix</a>, <a
+    href="https://www.dovecot.org/">dovecot</a>, <a
+    href="https://spamassassin.apache.org/">SpamAssassin</a>, <a
+    href="http://www.opendkim.org/">OpenDKIM</a>, <a
+    href="http://www.trusteddomain.org/opendmarc/">OpenDMARC</a>, and <a
+    href="https://www.rainloop.net/">rainloop</a> I use <a
+    href="https://github.com/k9mail/k-9/">K-9 Mail</a> on Android.<br />
     A <a href="http://gmail.com">Gmail</a> replacement.
   </dd>
 
