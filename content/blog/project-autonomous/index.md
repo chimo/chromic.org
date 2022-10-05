@@ -64,6 +64,12 @@ Here's a quick list of what's working at the moment:
     href="https://github.com/k9mail/k-9/">K-9 Mail</a> on Android.<br />
     A <a href="http://gmail.com">Gmail</a> replacement.
   </dd>
+
+  <dt id="vault"><a href="https://vault.chromic.org">vault.chromic.org</a></dt>
+  <dd>
+    A <a href="https://github.com/dani-garcia/vaultwarden">vaultwarden</a>
+    instance.
+  </dd>
 </dl>
 
 
