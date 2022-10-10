@@ -96,7 +96,7 @@ Try pgloader with the temporary database:
 
 {{< highlight bash >}}
 load database from
-    mysql://gitea:$PASSWORD@mariadb.lxc.chromic.org:3306/gitea into
+    mysql://gitea:$PASSWORD@mariadb.lxc.chromic.org:3306/gitea_tmp into
     postgresql://gitea@postgres.lxc.chromic.org:5432/gitea
  with data only
  ALTER SCHEMA 'gitea_tmp' RENAME TO 'public';
