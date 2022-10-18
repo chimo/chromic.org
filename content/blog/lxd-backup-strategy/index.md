@@ -2,6 +2,7 @@
 title: LXD Backup Strategy
 description: ""
 publishdate: 2022-10-01
+modified: 2022-10-18
 categories: blog
 tags: [lxd]
 ---
@@ -91,12 +92,17 @@ and copies the VPS containers back home once a month:
 {{< highlight bash >}}
 #!/bin/bash
 
-containers=$(lxc list status=running -c n --format csv)
+lxc storage volume copy default/certs home-instance:default/certs --refresh \
+    --mode push \
+    --volume-only
+
+mapfile -t containers < <(lxc list status=running -c n --format csv)
 
 for container in "${containers[@]}"
 do
     lxc copy "${container}" home-instance:backup-"${container}" --refresh \
-		--mode push
+        --mode push \
+        --instance-only
 done
 {{< / highlight >}}
 
