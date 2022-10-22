@@ -8,8 +8,7 @@ title: "chromic"
   Hi! I'm <span class="p-name p-author">Chimo</span>. This is my
   <a href="http://indiewebcamp.com/indieweb">IndieWeb</a>.
   <a href="http://indiewebcamp.com/IRC-people">There are many like it</a>,
-  but this one is mine.<br>
-  (the <a href="/lifestream">lifestream has moved here</a> for the moment)
+  but this one is mine.
 
   <!-- <div id="geo-container">
     <span class="fa fa-map-marker"></span>
