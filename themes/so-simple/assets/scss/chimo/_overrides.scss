@@ -1,3 +1,7 @@
+.navigation-wrapper ul {
+    margin-bottom: 0px;
+}
+
 /* Default link color is blue */
 a {
     &,
@@ -119,6 +123,10 @@ li {
    /* + .entry-title {
         margin-top: 0;
     } */
+}
+
+.entry-title {
+    font-size: 2.25rem;
 }
 
 /**
