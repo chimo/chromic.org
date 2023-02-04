@@ -1,0 +1,96 @@
+{{ define "tags" }}
+
+{{ $taxo := "tags" }} <!-- Use the plural form here -->
+<ul id="{{ $taxo }}" class="entry-tags">
+    {{ range .Param $taxo }}
+        {{ $name := . }}
+        {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+            <li> <a href="{{ .Permalink }}">{{ $name }}</a></li>
+        {{ end }}
+    {{ end }}
+</ul>
+
+{{ end }}
+
+{{ define "byline" }}
+<!-- Author info -->
+<div class="entry-author h-card">
+  <a class="u-url" href="http://chromic.org">
+    <img alt="Chimo bio photo" class="bio-photo u-photo"
+      src="/images/bio-photo.png" />
+    <span class="by-line">
+      <span class="sr-only">By</span>
+      <span class="p-author p-name" href="https://chromic.org">Chimo</span>
+    </span>
+  </a>
+</div>
+
+<!-- Date published -->
+<div class="entry-date date published">
+  <span title="Date published">
+    <i class="fa fa-calendar-o"></i>
+    <span class="sr-only">Date published</span>
+  </span>
+  <time class="dt-published" datetime="{{ .PublishDate }}">
+    {{ .PublishDate| dateFormat "Jan. 2, 2006" }}
+  </time>
+</div>
+
+<!-- Date modified -->
+<div class="entry-date date modified">
+  <span title="Date modified">
+    <i class="fa fa-pencil"></i>
+    <span class="sr-only">Date modified</span>
+  </span>
+  <time class="dt-updated" datetime="{{ .Lastmod }}">
+    {{ .Lastmod | dateFormat "Jan. 2, 2006" }}
+  </time>
+</div>
+{{ end }}
+
+{{ define "main" }}
+  {{ .Content }}
+{{ end }}
+
+{{ define "webmentions" }}
+  {{ $webmentions := .Resources.Match "webmentions/*" }}
+  {{ $nb_wm := len $webmentions }}
+
+  <section class="webmentions">
+    <!--<form action="https://webmention.chromic.org/chromic.org/webmention"
+      class="webmention-form" method="post" id="webmention_form">
+
+      <label class="webmention-form__question" for="webmention-url">
+        Have you written a response to this? Let me know the URL:
+      </label>
+
+      <div class="form-group">
+        <input class="webmention-form__url" id="webmention-url" name="source"
+          type="url">
+
+        <input class="button btn" type="submit" value="Send Webmention" />
+      </div>
+
+      <input name="target" type="hidden" value="{{ .Permalink }}">
+    </form>-->
+
+    {{ if ne $nb_wm 0 }}
+      <h1>Webmentions</h1>
+
+      <ol class="webmention__list" id="webmentions">
+        {{ range sort $webmentions ".Params.publishdate" "desc" }}
+          {{ if eq .Params.type "like-of" }}
+            <li class="webmention webmention--like">{{ partial "webmentions/like.html" . }}</li>
+          {{ else if eq .Params.type "repost-of" }}
+            <li class="webmention webmention--repost">{{ partial "webmentions/repost.html" . }}</li>
+          {{ else if eq .Params.type "bookmark-of" }}
+            <li class="webmention webmention--bookmark">{{ partial "webmentions/bookmark.html" . }}</li>
+          {{ else }}
+            <li class="webmention webmention--reply">{{ partial "webmentions/reply.html" . }}</li>
+          {{ end }}
+        {{ end }}
+      </ol>
+    {{ end }}
+  </section>
+{{ end }}
+
