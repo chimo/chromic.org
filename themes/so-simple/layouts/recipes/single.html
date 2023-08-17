@@ -1,0 +1,74 @@
+{{ define "tags" }}
+
+{{ $taxo := "tags" }} <!-- Use the plural form here -->
+<ul id="{{ $taxo }}" class="entry-tags">
+    {{ range .Param $taxo }}
+        {{ $name := . }}
+        {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+            <li> <a href="{{ .Permalink }}">{{ $name }}</a></li>
+        {{ end }}
+    {{ end }}
+</ul>
+{{ end }}
+
+{{ define "byline" }}
+<!-- Author info -->
+<div class="entry-author h-card">
+  <a class="u-url" href="http://chromic.org">
+    <img alt="Chimo bio photo" class="bio-photo u-photo"
+      src="/images/bio-photo.png" />
+    <span class="by-line">
+      <span class="sr-only">By</span>
+      <span class="p-author p-name" href="https://chromic.org">Chimo</span>
+    </span>
+  </a>
+</div>
+
+<!-- Date published -->
+<div class="entry-date date published">
+  <span title="Date published">
+    <i class="fa fa-calendar-o"></i>
+    <span class="sr-only">Date published</span>
+  </span>
+  <time class="dt-published" datetime="{{ .PublishDate }}">
+    {{ .PublishDate| dateFormat "Jan. 2, 2006" }}
+  </time>
+</div>
+
+<!-- Date modified -->
+<div class="entry-date date modified">
+  <span title="Date modified">
+    <i class="fa fa-pencil"></i>
+    <span class="sr-only">Date modified</span>
+  </span>
+  <time class="dt-updated" datetime="{{ .Lastmod }}">
+    {{ .Lastmod | dateFormat "Jan. 2, 2006" }}
+  </time>
+</div>
+{{ end }}
+
+{{ define "main" }}
+    <div class="recipe-ingredients">
+        <h2>Ingredients</h2>
+
+        <ul>
+            {{ range .Param "ingredients" }}
+                {{ $name := . }}
+                <li>{{ $name | markdownify }}</li>
+            {{ end }}
+        </ul>
+    </div>
+
+    <div class="recipe-instructions">
+        <h2>Directions</h2>
+
+        <ul>
+            {{ range .Param "directions" }}
+                {{ $name := . }}
+                <li>{{ $name }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ .Content }}
+{{ end }}
+
