@@ -5,7 +5,7 @@ layout: recipe
 title:  "Watermelon Salad with Feta and Cucumber"
 image: banana-bread.jpg
 imagecredit: https://flic.kr/p/7HZmzn
-tags: salad, watermelon, feta
+tags: [ salad, watermelon, feta ]
 
 ingredients:
 - 3 cups watermelon cubed or balled
